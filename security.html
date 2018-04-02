@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Mon Apr 02 2018 14:09:43 GMT+0000 (UTC)  -->
-<html data-wf-page="5abcf33cf7ee457e9fd759f6" data-wf-site="5a96bd26892ae8000194cd45">
+<html data-wf-page="5abcfd93f7ee45baf8d768b9" data-wf-site="5a96bd26892ae8000194cd45">
 <head>
   <meta charset="utf-8">
-  <title>New Dashboard</title>
-  <meta content="New Dashboard" property="og:title">
+  <title>Security</title>
+  <meta content="Security" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -93,6 +93,17 @@
               </div>
             </div>
           </a>
+        </div>
+        <div id="show_metrics" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">instance metrics</h2>
+          <div class="analytics">
+            <div class="w-row">
+              <div class="column-2 w-col w-col-4"><select id="Select-instance" name="Select-instance" data-name="Select Instance" class="w-select"><option value="">Instance ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="w-col w-col-4"><select id="select-metric" name="select-metric" data-name="Select Metric" class="w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="column-3 w-col w-col-4"><select id="field-9" name="field-9" data-name="Field 9" class="w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+            </div>
+            <div id="chart" class="shadow chart"></div>
+          </div>
         </div>
         <div id="show_otp" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">one time password</h2><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="otp-img-large"></div>
@@ -568,72 +579,185 @@
           </a>
         </div>
       </div>
-      <div class="analytics">
-        <div class="container-box w-row">
-          <div class="column-2 w-col w-col-4 w-col-small-4"><select id="Select-instance" name="Select-instance" data-name="Select instance" class="w-select"><option value="">Instance ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-          <div class="w-col w-col-4 w-col-small-4"><select id="select-metric-2" name="select-metric" data-name="select-metric" class="w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-          <div class="column-3 w-col w-col-4 w-col-small-4"><select id="field" name="field" class="w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-        </div>
-        <div id="chart" class="shadow chart"></div>
-      </div>
       <div class="container-box">
-        <div class="w-row">
-          <div class="w-col w-col-6">
-            <h2 data-target="my-account" class="card-heading">Manage</h2>
-            <a href="#" data-target="my_account" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">my account</div>
-            </a>
-            <a href="instances.html" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">instances</div>
-            </a>
-            <a href="users.html" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">users</div>
-            </a>
-            <a href="security.html" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">security</div>
-            </a>
-            <div class="system-updates">
-              <h2 class="card-heading">System uPDATES</h2>
-              <div class="max-width w-row">
-                <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2">
-                  <div class="icon grey-text centered"></div>
+        <h2 class="card-heading">Manage Security</h2>
+        <div data-duration-in="300" data-duration-out="100" class="w-tabs">
+          <div class="tab-menu w-tab-menu">
+            <a data-w-tab="Api Keys" class="tab-link w-inline-block w-tab-link">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
                 </div>
-                <div class="w-col w-col-10 w-col-small-10 w-col-tiny-10">
-                  <div class="grey-text small-text">Network maintenance will be performed on Tue, Jul 23 at 04:00am. Please note, all Instances will be <strong>temporarily</strong> <strong>suspended</strong>. Thank you for your patience!</div>
+                <div class="w-col w-col-9">
+                  <div>api keys</div>
                 </div>
               </div>
-              <div class="max-width w-row">
-                <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2">
-                  <div class="icon grey-text centered"></div>
+            </a>
+            <a data-w-tab="OTP" class="tab-link w-inline-block w-tab-link w--current">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
                 </div>
-                <div class="w-col w-col-10 w-col-small-10 w-col-tiny-10">
-                  <div class="grey-text small-text">We are expanding our server capacity. Stay tuned for significant performance improvements!</div>
+                <div class="w-col w-col-9">
+                  <div>one time passwords</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="tabs-content w-tab-content">
+            <div data-w-tab="Api Keys" class="w-tab-pane">
+              <div>
+                <h6 class="modal-header add-new">add new key</h6>
+                <div class="w-row">
+                  <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="field-5" required=""></div>
+                  <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="field-5" required=""></div>
+                  <div class="w-col w-col-3"><textarea id="field-6" name="field-6" placeholder="Example Text" maxlength="5000" class="w-input"></textarea></div>
+                  <div class="w-col w-col-1"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 float-right w-button"></a></div>
+                </div>
+                <div class="w-row">
+                  <div class="w-col w-col-4">
+                    <h6 class="modal-header">key</h6>
+                  </div>
+                  <div class="w-col w-col-4">
+                    <h6 class="modal-header">secret</h6>
+                  </div>
+                  <div class="w-col w-col-4">
+                    <h6 class="modal-header">description</h6>
+                  </div>
+                </div>
+                <div class="w-row">
+                  <div class="w-col w-col-4">
+                    <h6 class="text">04cf5e00-d8eb-4307-99a1-c81991bb7c93</h6>
+                  </div>
+                  <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="NJn6Tatlh0uMa2bfRxXxhTZkBV2ZcF3Ew-84OqJLpfc3ynNFSwsu6bP04XRbzaT3bTkNkhROkz8I38ITyBFzLIV" id="field-5" required=""></div>
+                  <div class="w-col w-col-3"><textarea id="field-6" name="field-6" maxlength="5000" placeholder="Team API access token" class="w-input"></textarea></div>
+                  <div class="w-col w-col-1"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 float-right w-button"></a></div>
+                </div>
+                <div class="w-row">
+                  <div class="w-col w-col-4">
+                    <h6 class="text">04cf5e00-d8eb-4307-99a1-c81991bb7c93</h6>
+                  </div>
+                  <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="NJn6Tatlh0uMa2bfRxXxhTZkBV2ZcF3Ew-84OqJLpfc3ynNFSwsu6bP04XRbzaT3bTkNkhROkz8I38ITyBFzLIV" id="field-5" required=""></div>
+                  <div class="w-col w-col-3"><textarea id="field-6" name="field-6" maxlength="5000" placeholder="Team API access token" class="w-input"></textarea></div>
+                  <div class="w-col w-col-1"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 float-right w-button"></a></div>
+                </div>
+                <div class="w-row">
+                  <div class="w-col w-col-4">
+                    <h6 class="text">04cf5e00-d8eb-4307-99a1-c81991bb7c93</h6>
+                  </div>
+                  <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="NJn6Tatlh0uMa2bfRxXxhTZkBV2ZcF3Ew-84OqJLpfc3ynNFSwsu6bP04XRbzaT3bTkNkhROkz8I38ITyBFzLIV" id="field-5" required=""></div>
+                  <div class="w-col w-col-3"><textarea id="field-6" name="field-6" maxlength="5000" placeholder="Team API access token" class="w-input"></textarea></div>
+                  <div class="w-col w-col-1"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 float-right w-button"></a></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="w-col w-col-6">
-            <h2 data-target="my-account" class="card-heading">Quik Create</h2>
-            <a href="#" data-target="add_instance" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">new instance</div>
-            </a>
-            <a href="#" data-target="add_user" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">new user</div>
-            </a>
-            <a href="#" data-target="add_api" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">new api key</div>
-            </a>
-            <a href="#" data-target="add_otp" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">new otp</div>
-            </a>
+            <div data-w-tab="OTP" class="w-tab-pane w--tab-active">
+              <h6 class="modal-header add-new">generate new otp</h6>
+              <div class="w-row">
+                <div class="w-col w-col-4"><select id="field-3" name="field-3" class="w-select"><option value="">Select User...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                <div class="w-clearfix w-col w-col-4">
+                  <a href="#" title="Generate New One Time Password" class="button icon-btn float-right w-inline-block">
+                    <div class="w-row">
+                      <div class="w-col w-col-3">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="w-col w-col-9">
+                        <div class="btn-label">Generate OTP</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" title="Send generated OTP to user" class="button icon-btn float-right w-inline-block">
+                    <div class="w-row">
+                      <div class="w-col w-col-3">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="w-col w-col-9">
+                        <div class="btn-label">email to user</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="w-col w-col-4"><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="otp-img"></div>
+              </div>
+              <div class="card list">
+                <div class="info-row list">
+                  <div class="w-row">
+                    <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline">
+                      <div class="small-pill">
+                        <div class="text-block">admin</div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div class="name-label inline bold">Optimus Prime Jr</div>
+                    </div>
+                    <div class="w-col w-col-3">
+                      <div class="grey-text">iamprime@gmail.com</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <p class="grey-text">New</p>
+                      <div class="hover-menu list"><a href="#" title="Delete OTP" data-target="delete_otp" class="button btn-round btn-m w-button"></a><a href="#" title="View OTP" data_target="show_otp" class="button btn-round btn-m w-button"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-row list">
+                  <div class="w-row">
+                    <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline">
+                      <div class="small-pill">
+                        <div class="text-block">admin</div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div class="name-label inline bold">Optimus Prime Jr</div>
+                    </div>
+                    <div class="w-col w-col-3">
+                      <div class="grey-text">iamprime@gmail.com</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <p class="grey-text">New</p>
+                      <div class="hover-menu list"><a href="#" title="Delete OTP" data-target="delete_otp" class="button btn-round btn-m w-button"></a><a href="#" title="View OTP" data_target="show_otp" class="button btn-round btn-m w-button"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-row list">
+                  <div class="w-row">
+                    <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline">
+                      <div class="small-pill">
+                        <div class="text-block">admin</div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div class="name-label inline bold">Optimus Prime Jr</div>
+                    </div>
+                    <div class="w-col w-col-3">
+                      <div class="grey-text">iamprime@gmail.com</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <p class="grey-text">New</p>
+                      <div class="hover-menu list"><a href="#" title="Delete OTP" data-target="delete_otp" class="button btn-round btn-m w-button"></a><a href="#" title="View OTP" data_target="show_otp" class="button btn-round btn-m w-button"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-row list">
+                  <div class="w-row">
+                    <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline">
+                      <div class="small-pill">
+                        <div class="text-block">admin</div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div class="name-label inline bold">Optimus Prime Jr</div>
+                    </div>
+                    <div class="w-col w-col-3">
+                      <div class="grey-text">iamprime@gmail.com</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <p class="grey-text">New</p>
+                      <div class="hover-menu list"><a href="#" title="Delete OTP" data-target="delete_otp" class="button btn-round btn-m w-button"></a><a href="#" title="View OTP" data_target="show_otp" class="button btn-round btn-m w-button"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Mon Apr 02 2018 14:09:43 GMT+0000 (UTC)  -->
-<html data-wf-page="5abcf33cf7ee457e9fd759f6" data-wf-site="5a96bd26892ae8000194cd45">
+<html data-wf-page="5abbe28cc2dc1e37f1879f62" data-wf-site="5a96bd26892ae8000194cd45">
 <head>
   <meta charset="utf-8">
-  <title>New Dashboard</title>
-  <meta content="New Dashboard" property="og:title">
+  <title>Users</title>
+  <meta content="Users" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -93,6 +93,17 @@
               </div>
             </div>
           </a>
+        </div>
+        <div id="show_metrics" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">instance metrics</h2>
+          <div class="analytics">
+            <div class="w-row">
+              <div class="column-2 w-col w-col-4"><select id="Select-instance" name="Select-instance" data-name="Select Instance" class="w-select"><option value="">Instance ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="w-col w-col-4"><select id="select-metric" name="select-metric" data-name="Select Metric" class="w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="column-3 w-col w-col-4"><select id="field-9" name="field-9" data-name="Field 9" class="w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+            </div>
+            <div id="chart" class="shadow chart"></div>
+          </div>
         </div>
         <div id="show_otp" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">one time password</h2><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="otp-img-large"></div>
@@ -568,72 +579,107 @@
           </a>
         </div>
       </div>
-      <div class="analytics">
-        <div class="container-box w-row">
-          <div class="column-2 w-col w-col-4 w-col-small-4"><select id="Select-instance" name="Select-instance" data-name="Select instance" class="w-select"><option value="">Instance ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-          <div class="w-col w-col-4 w-col-small-4"><select id="select-metric-2" name="select-metric" data-name="select-metric" class="w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-          <div class="column-3 w-col w-col-4 w-col-small-4"><select id="field" name="field" class="w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-        </div>
-        <div id="chart" class="shadow chart"></div>
-      </div>
       <div class="container-box">
-        <div class="w-row">
-          <div class="w-col w-col-6">
-            <h2 data-target="my-account" class="card-heading">Manage</h2>
-            <a href="#" data-target="my_account" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">my account</div>
-            </a>
-            <a href="instances.html" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">instances</div>
-            </a>
-            <a href="users.html" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">users</div>
-            </a>
-            <a href="security.html" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">security</div>
-            </a>
-            <div class="system-updates">
-              <h2 class="card-heading">System uPDATES</h2>
-              <div class="max-width w-row">
-                <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2">
-                  <div class="icon grey-text centered"></div>
-                </div>
-                <div class="w-col w-col-10 w-col-small-10 w-col-tiny-10">
-                  <div class="grey-text small-text">Network maintenance will be performed on Tue, Jul 23 at 04:00am. Please note, all Instances will be <strong>temporarily</strong> <strong>suspended</strong>. Thank you for your patience!</div>
-                </div>
+        <div class="padded-block">
+          <a href="#" data-target="my_account" class="button btn-flat no-border float-right w-inline-block">
+            <div data-targe="my_account" class="icon"></div>
+          </a>
+          <h2 class="card-heading">users</h2>
+          <a href="#" data-target="my_account" class="button btn-flat no-border hidden w-inline-block">
+            <div data-targe="my_account" class="icon"></div>
+          </a>
+          <a href="#" data-target="add_user" class="button icon-btn small w-inline-block">
+            <div class="icon"></div>
+          </a>
+          <a href="#" data-target="my_account" class="button btn-flat no-border w-inline-block">
+            <div data-targe="my_account" class="icon"></div>
+          </a><select id="field-7" name="field-7" class="input-field inline-flat w-select"><option value="">Sort By...</option><option value="First">Creation Date</option><option value="Second">Name</option><option value="Third">Third Choice</option></select>
+          <a href="#" data-target="my_account" class="button btn-flat no-border w-inline-block">
+            <div data-targe="my_account" class="icon"></div>
+          </a><input type="text" class="w-input" maxlength="256" name="field-8" data-name="Field 8" placeholder="Search Users" id="field-8" required=""></div>
+        <div class="users-dashboard">
+          <div class="card flex">
+            <div class="info-row shadow"><img src="images/Optimus_Prime_Helmet.png" class="userpic">
+              <div class="name-label bold">Optimus Prime Jr</div>
+              <div class="small-pill">
+                <div class="text-block">admin</div>
               </div>
-              <div class="max-width w-row">
-                <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2">
-                  <div class="icon grey-text centered"></div>
+              <div class="grey-text">iamprime@gmail.com</div>
+              <p class="stat-block">Last login: Today</p>
+              <div class="hover-menu"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+            </div>
+            <div class="info-row shadow"><img src="images/Silver_Iron_Man_Mask.png" srcset="images/Silver_Iron_Man_Mask-p-500.png 500w, images/Silver_Iron_Man_Mask.png 512w" sizes="50px" class="userpic">
+              <div class="name-label bold">Silver surfer thompson</div>
+              <div class="grey-text">ssthom@gmail.com</div>
+              <p class="stat-block">Last login: 12-12-2018</p>
+              <div class="hover-menu"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+            </div>
+          </div>
+          <div class="card list">
+            <div class="info-row list">
+              <div class="w-row">
+                <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline">
+                  <div class="small-pill">
+                    <div class="text-block">admin</div>
+                  </div>
                 </div>
-                <div class="w-col w-col-10 w-col-small-10 w-col-tiny-10">
-                  <div class="grey-text small-text">We are expanding our server capacity. Stay tuned for significant performance improvements!</div>
+                <div class="w-col w-col-4">
+                  <div class="name-label inline bold">Optimus Prime Jr</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="grey-text">iamprime@gmail.com</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <p class="grey-text">Last login: Today</p>
+                  <div class="hover-menu list"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="w-col w-col-6">
-            <h2 data-target="my-account" class="card-heading">Quik Create</h2>
-            <a href="#" data-target="add_instance" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">new instance</div>
-            </a>
-            <a href="#" data-target="add_user" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">new user</div>
-            </a>
-            <a href="#" data-target="add_api" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">new api key</div>
-            </a>
-            <a href="#" data-target="add_otp" class="button icon-btn mr-10 w-inline-block">
-              <div class="icon"></div>
-              <div class="icon-btn-label">new otp</div>
-            </a>
+            <div class="info-row list">
+              <div class="w-row">
+                <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline"></div>
+                <div class="w-col w-col-4">
+                  <div class="name-label inline bold">Optimus Prime Jr</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="grey-text">iamprime@gmail.com</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <p class="grey-text">Last login: Today</p>
+                  <div class="hover-menu list"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="info-row list">
+              <div class="w-row">
+                <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline"></div>
+                <div class="w-col w-col-4">
+                  <div class="name-label inline bold">Optimus Prime Jr</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="grey-text">iamprime@gmail.com</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <p class="grey-text">Last login: Today</p>
+                  <div class="hover-menu list"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="info-row list">
+              <div class="w-row">
+                <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline"></div>
+                <div class="w-col w-col-4">
+                  <div class="name-label inline bold">Optimus Prime Jr</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="grey-text">iamprime@gmail.com</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <p class="grey-text">Last login: Today</p>
+                  <div class="hover-menu list"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
