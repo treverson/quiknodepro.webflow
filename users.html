@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Apr 02 2018 14:09:43 GMT+0000 (UTC)  -->
+<!--  Last Published: Thu Apr 05 2018 15:27:38 GMT+0000 (UTC)  -->
 <html data-wf-page="5abbe28cc2dc1e37f1879f62" data-wf-site="5a96bd26892ae8000194cd45">
 <head>
   <meta charset="utf-8">
@@ -34,18 +34,51 @@
   <div id="particles-back" class="particles-back"></div>
   <div class="w-form">
     <form id="email-form" name="email-form" data-name="Email Form">
-      <div data-collapse="medium" data-animation="over-left" data-duration="400" class="navbar w-nav"><a href="#" class="brand w-clearfix w-nav-brand"><img src="images/quiknode_pro_long.png" srcset="images/quiknode_pro_long-p-500.png 500w, images/quiknode_pro_long.png 561w" sizes="166.078125px" class="logo"></a>
-        <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link">Dashboard</a><a href="instances.html" class="nav-link w-nav-link">Instances</a><a href="users.html" class="nav-link w-nav-link">Users</a><a href="security.html" class="nav-link w-nav-link">security</a><a href="#" class="nav-link w-nav-link">Help</a><a href="#" class="nav-link w-nav-link">Logout</a></nav>
+      <div data-collapse="medium" data-animation="over-left" data-duration="400" id="particles-back" class="navbar w-nav">
         <div class="menu-button w-nav-button">
           <div class="w-icon-nav-menu"></div>
-        </div>
+        </div><a href="#" class="brand w-clearfix w-nav-brand"><img src="images/quiknode_pro_long.png" srcset="images/quiknode_pro_long-p-500.png 500w, images/quiknode_pro_long.png 561w" sizes="166.078125px" class="logo"></a>
+        <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link"><span class="icon"></span><br>Dashboard</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Instances</a><a href="users.html" class="nav-link w-nav-link"><span class="icon"><br xmlns="http://www.w3.org/1999/xhtml"></span>Users</a><a href="security.html" class="nav-link w-nav-link"><span class="icon"></span><br>security</a><a href="#" class="nav-link w-nav-link"><span class="icon"></span><br>Help</a><a href="#" class="nav-link w-nav-link"><span class="icon"></span><br>Logout</a></nav>
       </div>
       <div class="modal-overlay">
         <div id="my_account" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">My account</h2>
           <div class="w-container">
+            <div class="centered text">Balance: ETH0.01</div>
+            <div class="centered">
+              <a href="#" class="button icon-btn mr-10 w-inline-block">
+                <div class="w-row">
+                  <div class="w-col w-col-3">
+                    <div class="icon"></div>
+                  </div>
+                  <div class="w-col w-col-9">
+                    <div class="btn-label">Add funds</div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="button icon-btn mr-10 w-inline-block">
+                <div class="w-row">
+                  <div class="w-col w-col-3">
+                    <div class="icon"></div>
+                  </div>
+                  <div class="w-col w-col-9">
+                    <div class="btn-label">Generate OTP</div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" title="Delete permanently" class="button icon-btn w-inline-block">
+                <div class="w-row">
+                  <div class="w-col w-col-3">
+                    <div class="icon"></div>
+                  </div>
+                  <div class="w-col w-col-9">
+                    <div class="btn-label">Terminate</div>
+                  </div>
+                </div>
+              </a>
+            </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
+              <div class="w-clearfix w-col w-col-6">
                 <div class="icon-input w-row">
                   <div class="w-col w-col-1">
                     <div class="icon icon-lg"></div>
@@ -54,22 +87,10 @@
                 </div>
                 <div class="icon-input w-row">
                   <div class="w-col w-col-1">
-                    <div class="icon icon-lg"></div>
+                    <div class="icon icon-lg mt10"></div>
                   </div>
-                  <div class="w-col w-col-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="mail@usps.com" id="field-2" required=""></div>
+                  <div class="w-col w-col-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Password" id="field-2" required=""></div>
                 </div>
-              </div>
-              <div class="w-clearfix w-col w-col-6">
-                <a href="#" class="button icon-btn w-inline-block">
-                  <div class="w-row">
-                    <div class="w-col w-col-3">
-                      <div class="icon"></div>
-                    </div>
-                    <div class="w-col w-col-9">
-                      <div class="btn-label">Generate OTP</div>
-                    </div>
-                  </div>
-                </a>
                 <a href="#" class="button icon-btn float-right w-inline-block">
                   <div class="w-row">
                     <div class="w-col w-col-3">
@@ -81,9 +102,23 @@
                   </div>
                 </a>
               </div>
+              <div class="w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1">
+                    <div class="icon icon-lg"></div>
+                  </div>
+                  <div class="w-col w-col-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="mail@usps.com" id="field-2" required=""></div>
+                </div>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1">
+                    <div class="icon icon-lg"></div>
+                  </div>
+                  <div class="w-col w-col-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="mail@usps.com" id="field-2" required=""></div>
+                </div>
+              </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right mt10 w-inline-block">
+          <a href="#" class="button icon-btn save-btn float-right w-inline-block">
             <div class="w-row">
               <div class="w-col w-col-3">
                 <div class="icon"></div>
@@ -96,35 +131,65 @@
         </div>
         <div id="show_metrics" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">instance metrics</h2>
+          <div class="centered"><select id="select-metric" name="select-metric" data-name="Select Metric" class="input-field inline mr-10 w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select><select id="field-9" name="field-9" data-name="Field 9" class="input-field inline w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
           <div class="analytics">
-            <div class="w-row">
-              <div class="column-2 w-col w-col-4"><select id="Select-instance" name="Select-instance" data-name="Select Instance" class="w-select"><option value="">Instance ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-              <div class="w-col w-col-4"><select id="select-metric" name="select-metric" data-name="Select Metric" class="w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-              <div class="column-3 w-col w-col-4"><select id="field-9" name="field-9" data-name="Field 9" class="w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-            </div>
             <div id="chart" class="shadow chart"></div>
           </div>
         </div>
         <div id="show_otp" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
-          <h2 class="modal-header">one time password</h2><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="otp-img-large"></div>
+          <h2 class="modal-header">one time password</h2>
+          <div class="centered">Created on: 12-12-2018<br>Used on: 12-13-2018 10:45am<br>Assigned to: Optimus Prime Jr</div><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="otp-img-large">
+          <div class="centered mt-10">
+            <a href="#" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">email to user</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Delete permanently" class="button icon-btn w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">revoke</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
         <div id="add_api" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
-          <h2 class="modal-header">add api key</h2>
+          <h2 class="modal-header">Create api key</h2>
           <div>
             <div class="w-row">
-              <div class="w-col w-col-4">
-                <h6 class="text">04cf5e00-d8eb-4307-99a1-c81991bb7c93</h6>
+              <div class="w-col w-col-3"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Secret" id="field-5" required=""></div>
+              <div class="w-col w-col-3"><textarea id="field-6" name="field-6" placeholder="Description" maxlength="5000" class="w-input"></textarea></div>
+              <div class="column-4 w-col w-col-3">
+                <a href="#" class="button icon-btn w-inline-block">
+                  <div class="w-row">
+                    <div class="w-col w-col-3">
+                      <div class="icon"></div>
+                    </div>
+                    <div class="w-col w-col-9">
+                      <div class="btn-label">GEnerate</div>
+                    </div>
+                  </div>
+                </a>
               </div>
-              <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Secret" id="field-5" required=""></div>
-              <div class="column-4 w-col w-col-4"><textarea id="field-6" name="field-6" placeholder="Description" maxlength="5000" class="w-input"></textarea></div>
+              <div class="column-6 w-col w-col-3"><select id="field-10" name="field-10" class="w-select"><option value="">Assign to User...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right mt10 w-inline-block">
+          <a href="#" class="button icon-btn save-btn float-right w-inline-block">
             <div class="w-row">
               <div class="w-col w-col-3">
                 <div class="icon"></div>
               </div>
               <div class="w-col w-col-9">
-                <div class="btn-label">SAVE </div>
+                <div class="btn-label">Save</div>
               </div>
             </div>
           </a>
@@ -141,26 +206,28 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right mt10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CONTINUE</div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="button icon-btn float-right mt10 mr10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
-              </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CANCEL</div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div id="delete_api" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">delete api key?</h2>
@@ -174,26 +241,28 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right mt10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CONTINUE</div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="button icon-btn float-right mt10 mr10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
-              </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CANCEL</div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div id="delete_otp" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">delete One time password?</h2>
@@ -207,26 +276,28 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right mt10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CONTINUE</div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="button icon-btn float-right mt10 mr10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
-              </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CANCEL</div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div id="delete_user" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">delete user?</h2>
@@ -240,26 +311,28 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right mt10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CONTINUE</div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="button icon-btn float-right mt10 mr10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
-              </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CANCEL</div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div id="suspend_instance" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">suspend instance?</h2>
@@ -273,26 +346,28 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right mt10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CONTINUE</div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="button icon-btn float-right mt10 mr10 w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
-              </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">CANCEL</div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div id="add_user" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">add user</h2>
@@ -312,7 +387,7 @@
                   <div class="w-col w-col-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="mail@usps.com" id="field-2" required=""></div>
                 </div>
               </div>
-              <div class="w-clearfix w-col w-col-6">
+              <div class="w-col w-col-6">
                 <div class="icon-input w-row">
                   <div class="w-col w-col-1">
                     <div class="icon icon-lg mt10"></div>
@@ -325,21 +400,11 @@
                   </div>
                   <div class="w-col w-col-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Repeat password" id="field-2" required=""></div>
                 </div>
-                <a href="#" class="button icon-btn float-left w-inline-block">
-                  <div class="w-row">
-                    <div class="w-col w-col-3">
-                      <div class="icon"></div>
-                    </div>
-                    <div class="w-col w-col-9">
-                      <div class="btn-label">Reset password</div>
-                    </div>
-                  </div>
-                </a>
               </div>
             </div>
             <div class="w-row">
               <div class="w-col w-col-6">
-                <h4 class="modal-header">user&#x27;s instances</h4><select id="field-3" name="field-3" class="w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                <h4 class="modal-header">Assign API Key</h4><select id="field-3" name="field-3" class="w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
               <div class="w-col w-col-6">
                 <h4 class="modal-header">permissions</h4>
                 <div class="checkbox w-checkbox"><input type="checkbox" id="checkbox-8" name="checkbox-8" data-name="Checkbox 8" class="checkbox-field w-checkbox-input"><label for="checkbox-9" class="checkbox-label w-form-label">add users</label></div>
@@ -350,21 +415,23 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Save</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">SAVE </div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div id="add_otp" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">generate one time password</h2>
           <div class="w-container">
-            <div class="w-row">
+            <div class="mb-10 mt-20 w-row">
               <div class="w-col w-col-4"><select id="field-3" name="field-3" class="w-select"><option value="">Select User...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
               <div class="w-clearfix w-col w-col-4">
                 <a href="#" class="button icon-btn float-right w-inline-block">
@@ -373,7 +440,7 @@
                       <div class="icon"></div>
                     </div>
                     <div class="w-col w-col-9">
-                      <div class="btn-label">Generate OTP</div>
+                      <div class="btn-label">Generate</div>
                     </div>
                   </div>
                 </a>
@@ -388,15 +455,66 @@
                   </div>
                 </a>
               </div>
-              <div class="w-col w-col-4"><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg"></div>
+              <div class="centered w-col w-col-4"><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg"></div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right w-inline-block">
-            <div class="btn-label">Done</div>
-          </a>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Save</div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
         <div id="edit_user" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
-          <h2 class="modal-header">edit user</h2>
+          <h2 class="modal-header">Edit User</h2>
+          <div class="centered">
+            <a href="#" title="Temporarily disable" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">suspend</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Delete permanently" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">delete</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Create new user with same permissions" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">clone</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="button icon-btn w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Generate OTP</div>
+                </div>
+              </div>
+            </a>
+          </div>
           <div class="w-container">
             <div class="btm10 w-row">
               <div class="w-col w-col-6">
@@ -436,21 +554,11 @@
                     </div>
                   </div>
                 </a>
-                <a href="#" class="button icon-btn w-inline-block">
-                  <div class="w-row">
-                    <div class="w-col w-col-3">
-                      <div class="icon"></div>
-                    </div>
-                    <div class="w-col w-col-9">
-                      <div class="btn-label">Generate OTP</div>
-                    </div>
-                  </div>
-                </a>
               </div>
             </div>
             <div class="w-row">
               <div class="w-col w-col-6">
-                <h4 class="modal-header">user&#x27;s instances</h4><select id="field-3" name="field-3" class="w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                <h4 class="modal-header">API KEYS</h4><select id="field-3" name="field-3" class="w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
               <div class="w-col w-col-6">
                 <h4 class="modal-header">permissions</h4>
                 <div class="checkbox w-checkbox"><input type="checkbox" id="checkbox-8" name="checkbox-8" data-name="Checkbox 8" class="checkbox-field w-checkbox-input"><label for="checkbox-9" class="checkbox-label w-form-label">add users</label></div>
@@ -461,16 +569,18 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Save</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">SAVE </div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div id="add_instance" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">create instance</h2>
@@ -514,19 +624,53 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Launch</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">LAUNCH!</div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div id="edit_instance" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
-          <h2 class="modal-header">edit instance</h2>
+          <h2 class="modal-header">Edit Instance</h2>
+          <div class="centered">
+            <a href="#" title="Temporarily turn off" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">suspend</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Delete permanently" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">delete</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Create new identical instance" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">clone</div>
+                </div>
+              </div>
+            </a>
+          </div>
           <div class="w-container">
             <div class="btm10 w-row">
               <div class="w-col w-col-6">
@@ -567,16 +711,18 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button icon-btn float-right w-inline-block">
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="icon"></div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Save</div>
+                </div>
               </div>
-              <div class="w-col w-col-9">
-                <div class="btn-label">SAVE </div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
       <div class="container-box">
@@ -608,12 +754,6 @@
               <p class="stat-block">Last login: Today</p>
               <div class="hover-menu"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
             </div>
-            <div class="info-row shadow"><img src="images/Silver_Iron_Man_Mask.png" srcset="images/Silver_Iron_Man_Mask-p-500.png 500w, images/Silver_Iron_Man_Mask.png 512w" sizes="50px" class="userpic">
-              <div class="name-label bold">Silver surfer thompson</div>
-              <div class="grey-text">ssthom@gmail.com</div>
-              <p class="stat-block">Last login: 12-12-2018</p>
-              <div class="hover-menu"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
-            </div>
           </div>
           <div class="card list">
             <div class="info-row list">
@@ -631,52 +771,6 @@
                 </div>
                 <div class="w-col w-col-4">
                   <p class="grey-text">Last login: Today</p>
-                  <div class="hover-menu list"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
-                </div>
-              </div>
-            </div>
-            <div class="info-row list">
-              <div class="w-row">
-                <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline"></div>
-                <div class="w-col w-col-4">
-                  <div class="name-label inline bold">Optimus Prime Jr</div>
-                </div>
-                <div class="w-col w-col-3">
-                  <div class="grey-text">iamprime@gmail.com</div>
-                </div>
-                <div class="w-col w-col-4">
-                  <p class="grey-text">Last login: Today</p>
-                  <div class="hover-menu list"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
-                </div>
-              </div>
-            </div>
-            <div class="info-row list">
-              <div class="w-row">
-                <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline"></div>
-                <div class="w-col w-col-4">
-                  <div class="name-label inline bold">Optimus Prime Jr</div>
-                </div>
-                <div class="w-col w-col-3">
-                  <div class="grey-text">iamprime@gmail.com</div>
-                </div>
-                <div class="w-col w-col-4">
-                  <p class="grey-text">Last login: Today</p>
-                  <div class="hover-menu list"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
-                </div>
-              </div>
-            </div>
-            <div class="info-row list">
-              <div class="w-row">
-                <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline"></div>
-                <div class="w-col w-col-4">
-                  <div class="name-label inline bold">Optimus Prime Jr</div>
-                </div>
-                <div class="w-col w-col-3">
-                  <div class="grey-text">iamprime@gmail.com</div>
-                </div>
-                <div class="w-col w-col-4">
-                  <p class="grey-text">Last login: Today</p>
-                  <div class="hover-menu list"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
                 </div>
               </div>
             </div>
@@ -765,7 +859,111 @@ $.getJSON(
     }
 );
     //particles background
-    //particlesJS("particles-back", {"particles":{"number":{"value":147,"density":{"enable":true,"value_area":868.0624057955}},"color":{"value":"#1eb7e3"},"shape":{"type":"circle","stroke":{"width":0,"color":"#1eb7e3"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.1,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#1eb7e3","opacity":0.1,"width":1.1048066982851816},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.3}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":0.3,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, update;  count_particles = document.querySelector('.js-count-particles'); update = function() {  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    particlesJS("particles-back", {
+  "particles": {
+    "number": {
+      "value": 199,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "polygon",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0.1,
+        "sync": true
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "bounce",
+      "bounce": false,
+      "attract": {
+        "enable": true,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
     //draggable
     $( ".sortable" ).sortable({
 			revert: true
