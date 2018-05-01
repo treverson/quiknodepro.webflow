@@ -1182,6 +1182,8 @@
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .container-box.align-left {
@@ -1406,8 +1408,8 @@
     padding-left: 10px;
   }
   .container-box {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .menu-button {
     z-index: 99999;
@@ -1585,6 +1587,11 @@
   .med-img.centered {
     max-width: 60px;
   }
+  .tab-link {
+    display: inline-block;
+    width: 120px;
+    min-width: 0px;
+  }
   .paragraph-2 {
     font-size: 0.7rem;
     line-height: 0.9rem;
@@ -1600,6 +1607,14 @@
   }
   .search-div {
     padding-left: 10px;
+  }
+  .description-field {
+    height: auto;
+    font-size: 0.5rem;
+  }
+  .tab-text {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
   }
 }
 
