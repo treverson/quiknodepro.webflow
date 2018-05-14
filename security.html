@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Tue May 01 2018 14:26:03 GMT+0000 (UTC)  -->
+<!--  Last Published: Mon May 14 2018 14:13:55 GMT+0000 (UTC)  -->
 <html data-wf-page="5ad50471b80230c9785812f1" data-wf-site="5a96bd26892ae8000194cd45">
 <head>
   <meta charset="utf-8">
@@ -70,10 +70,10 @@
       <div data-collapse="medium" data-animation="over-left" data-duration="400" id="particles-back" class="navbar w-nav">
         <div class="menu-button w-nav-button">
           <div class="w-icon-nav-menu"></div>
-        </div><a href="#" class="brand w-clearfix w-nav-brand"><img src="images/quiknode_pro_long.png" srcset="images/quiknode_pro_long-p-500.png 500w, images/quiknode_pro_long.png 561w" sizes="(max-width: 767px) 110.71875px, 166.078125px" class="logo"></a>
-        <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link"><span class="icon"></span><br>Dashboard</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Instances</a><a href="users.html" class="nav-link w-nav-link"><span class="icon"><br xmlns="http://www.w3.org/1999/xhtml"></span>Users</a><a href="security.html" class="nav-link w-nav-link"><span class="icon"></span><br>security</a><a href="#" class="nav-link w-nav-link"><span class="icon"></span><br>Help</a><a href="#" class="nav-link mode-switch w-nav-link"><span class="icon"></span><br>UI MODE</a><a href="#" class="nav-link w-nav-link"><span class="icon"></span><br>Logout</a></nav>
+        </div><a href="#" class="brand w-clearfix w-nav-brand"><img src="images/quiknode_pro_long.png" srcset="images/quiknode_pro_long-p-500.png 500w, images/quiknode_pro_long.png 561w" sizes="(max-width: 479px) 88vw, (max-width: 767px) 110.71875px, 166.078125px" class="logo"></a>
+        <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link"><span class="icon"></span><br>Dashboard</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Instances</a><a href="users.html" class="nav-link w-nav-link"><span class="icon"><br xmlns="http://www.w3.org/1999/xhtml"></span>Users</a><a href="security.html" class="nav-link w-nav-link w--current"><span class="icon"></span><br>security</a><a href="#" class="nav-link w-nav-link"><span class="icon"></span><br>Help</a><a href="#" class="nav-link mode-switch w-nav-link"><span class="icon"></span><br>UI MODE</a><a href="#" class="nav-link w-nav-link"><span class="icon"></span><br>Logout</a></nav>
       </div>
-      <div class="modal-overlay">
+      <div class="modal-overlay div-block-2 div-block-3">
         <div id="my_account" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">My account</h2>
           <div class="w-container">
@@ -158,7 +158,12 @@
         </div>
         <div id="show_metrics" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
           <h2 class="modal-header">instance metrics</h2>
-          <div class="centered"><select id="select-metric" name="select-metric" data-name="Select Metric" class="input-field inline mr-10 w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select><select id="field-9" name="field-9" data-name="Field 9" class="input-field inline w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+          <div class="centered">
+            <div class="w-row">
+              <div class="w-col w-col-6"><select id="select-metric" name="select-metric" data-name="Select Metric" class="input-field inline mr-10 w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="w-col w-col-6"><select id="field-9" name="field-9" data-name="Field 9" class="input-field inline w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+            </div>
+          </div>
           <div class="analytics">
             <div id="chart" class="shadow chart"></div>
           </div>
@@ -693,7 +698,7 @@
           </div>
         </div>
         <div id="edit_instance" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
-          <h2 class="modal-header">Edit Instance</h2>
+          <h2 class="modal-header">Edit Instance</h2><label class="name-label centered bold">Vigorously-peaceful-meerkat-4</label>
           <div class="centered">
             <a href="#" title="Temporarily turn off" class="button icon-btn mr-10 w-inline-block">
               <div class="w-row">
@@ -729,19 +734,20 @@
           <div class="w-container">
             <div class="btm10 w-row">
               <div class="w-col w-col-6">
-                <h4 class="modal-header subheader">info</h4>
-                <div class="icon-input w-row">
-                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                    <div class="icon icon-lg mt10"></div>
-                  </div>
-                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Name" id="field-2" required=""></div>
-                </div>
+                <h4 class="modal-header subheader">Description</h4>
                 <div class="icon-input w-row">
                   <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
                     <div class="icon icon-lg"></div>
                   </div>
                   <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><textarea id="field-4" name="field-4" placeholder="Description" maxlength="5000" class="w-input"></textarea></div>
                 </div>
+                <h4 class="modal-header subheader">DEVELOPER ACCESS</h4>
+                <div class="name-label mb-10 bold">HTTP PROVIDER</div>
+                <p class="copy">http://peaceful-meerkat-999.quiknode.io/eewrwrwerew/898989898989898</p>
+                <div class="name-label mb-10 bold">Web Socket HTTP AUTH</div>
+                <p><span class="copy">wss://peaceful-meerkat-999.quiknode.io/eewrwrwerew/898989898989898<br xmlns="http://www.w3.org/1999/xhtml"></span><br>Username: email@email.com<br>Password: your current password</p>
+                <div class="name-label mb-10 bold">Web Socket TOken auth</div>
+                <p class="copy">wss://peaceful-meerkat-999.quiknode.io/eewrwrwerew/898989898989898</p>
               </div>
               <div class="w-col w-col-6">
                 <h4 class="modal-header subheader">Validators</h4><select id="field-3" name="field-3" class="w-select"><option value="">Add New...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select>
