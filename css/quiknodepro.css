@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .content {
   padding: 1%;
 }
@@ -134,6 +138,10 @@
   transform: none;
 }
 
+.button.btn-flat.hidden {
+  display: none;
+}
+
 .button.btn-round {
   width: 60px;
   height: 60px;
@@ -265,6 +273,19 @@
   text-align: center;
 }
 
+.button.centered.long {
+  max-width: 500px;
+}
+
+.button.float-right {
+  clear: right;
+}
+
+.button.float-right.login-btn {
+  background-color: #1eb7e3;
+  color: #fff;
+}
+
 .button.microchart {
   width: 100%;
   height: 40px;
@@ -355,6 +376,12 @@
 
 .card-heading.inline {
   display: inline-block;
+}
+
+.card-heading.footer-heading {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .shadow {
@@ -536,7 +563,11 @@
 }
 
 .small-pic {
-  width: 35px;
+  width: 20px;
+}
+
+.small-pic.inline.mr-10 {
+  margin-right: 10px;
 }
 
 .hover-menu {
@@ -1033,10 +1064,15 @@
   margin-top: 40px;
   padding-bottom: 10px;
   clear: both;
-  border-bottom: 1px solid rgba(77, 77, 77, .23);
+  border-bottom: 1px solid #fff;
+  color: #fff;
   font-weight: 100;
   text-align: center;
   text-transform: uppercase;
+}
+
+.divider-text.hidden {
+  display: none;
 }
 
 .small-text {
@@ -1364,12 +1400,78 @@
   display: none;
 }
 
+.footer {
+  margin-top: 80px;
+  padding: 60px 10px 40px;
+  border-top: 1px solid #1eb7e3;
+  opacity: 0.39;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  text-align: center;
+}
+
+.footer:hover {
+  opacity: 0.94;
+  -webkit-filter: none;
+  filter: none;
+}
+
+.copyright-text {
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.row-4 {
+  display: none;
+}
+
+.dropdown-toggle-2 {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.text-block-3 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.text-span {
+  text-decoration: none;
+}
+
+.dropdown-link:hover {
+  background-color: #1eb7e3;
+  color: #fff;
+}
+
+.div-block-4 {
+  width: auto;
+}
+
+.social-link {
+  max-width: 25px;
+}
+
+.social {
+  margin-right: 20px;
+}
+
+.social.last {
+  margin-right: 0px;
+}
+
 @media (max-width: 991px) {
   .button {
     font-size: 0.6rem;
   }
   .button.icon-btn.mr-10 {
-    min-width: 100px;
+    min-width: 150px;
   }
   .card.flex {
     padding: 10px;
@@ -1537,6 +1639,8 @@
   }
   .button.icon-btn.mr-10 {
     width: 115px;
+    min-width: 100px;
+    font-size: 0.5rem;
   }
   .card.box-view {
     padding-left: 5px;
@@ -1599,10 +1703,16 @@
   .med-img.centered {
     max-width: 60px;
   }
+  .icon-btn-label {
+    font-size: 0.5rem;
+  }
   .tab-link {
     display: inline-block;
     width: 120px;
     min-width: 0px;
+  }
+  .btn-bubble {
+    font-size: 0.5rem;
   }
   .paragraph-2 {
     font-size: 0.7rem;
