@@ -277,6 +277,10 @@ a {
   max-width: 500px;
 }
 
+.button.centered.hidden {
+  display: none;
+}
+
 .button.float-right {
   clear: right;
 }
