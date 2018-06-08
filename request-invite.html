@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--  Last Published: Fri Jun 08 2018 13:42:12 GMT+0000 (UTC)  -->
-<html data-wf-page="5ad50471b802301a575812ed" data-wf-site="5a96bd26892ae8000194cd45">
+<html data-wf-page="5b1a8132844733f1b81d5f2f" data-wf-site="5a96bd26892ae8000194cd45">
 <head>
   <meta charset="utf-8">
-  <title>Login</title>
-  <meta content="Login" property="og:title">
+  <title>Request invite</title>
+  <meta content="Request invite" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -55,53 +55,22 @@
 <body class="main login">
   <div id="particles-back" class="particles-back"></div>
   <div class="login-container">
-    <div class="login--form w-form">
+    <div class="login--form invite-form w-form">
       <form id="email-form" name="email-form" data-name="Email Form"><img src="images/platinum_q.png" class="med-img centered">
-        <h3 class="card-heading centered">Login to your account</h3><a href="request-invite.html" class="text-link mb-10 centered">No Account? Request an invite!</a><input type="text" class="input-field dark w-input" maxlength="256" name="username" data-name="username" placeholder="Username" id="username"><input type="password" class="input-field dark w-input" maxlength="256" name="email" data-name="Email" placeholder="Password" id="email" required="">
+        <h3 class="card-heading centered">Get Invited!</h3>
+        <p class="hello-text centered">Please tell us a little bit about yourself. We will review your request and send you an invitation link via email.</p><input type="text" class="input-field dark w-input" maxlength="256" name="name" data-name="name" placeholder="Your Name" id="name" required=""><input type="email" class="input-field dark w-input" maxlength="256" name="email" data-name="email" placeholder="Your email" id="email-2" required=""><input type="text" class="input-field dark w-input" maxlength="256" name="business_name" data-name="business_name" placeholder="Name of your business" id="business_name"><textarea id="field-10" name="field-10" placeholder="How do you plan to use our platform?" maxlength="5000" class="input-field dark w-input"></textarea>
         <div class="w-row">
-          <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-            <div class="w-checkbox"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input"><label for="checkbox" class="label w-form-label">Keep me signed in</label></div><a href="#" class="text-link">Forgot Password?</a></div>
-          <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+          <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="http://quiknode.io/slack" target="_blank" class="text-link">Questions? <br>Talk to us on Slack</a></div>
+          <div class="column-12 w-col w-col-6 w-col-small-6 w-col-tiny-6">
             <a href="dashboard.html" class="button float-right login-btn w-inline-block">
-              <div class="w-row">
-                <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-                  <div class="icon"></div>
-                </div>
-                <div class="w-col w-col-9 w-col-small-9 w-col-tiny-9">
-                  <div>  Login</div>
-                </div>
-              </div>
+              <div>SEND</div>
             </a>
           </div>
         </div>
-        <h4 class="divider-text hidden">Or</h4>
         <a href="#" data-target="add_instance" title="Scan One Time Password" class="button centered hidden w-inline-block">
           <div class="icon"></div>
           <div class="small-text">SCAN ONE TIME PASSWORD</div>
         </a>
-        <div class="w-row">
-          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-            <a href="#" title="Login with Github" class="button btn-flat hidden w-inline-block">
-              <div class="w-row">
-                <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><img src="images/github-logo.png" class="pic-icon"></div>
-                <div class="w-col w-col-9 w-col-small-9 w-col-tiny-9">
-                  <div class="small-text">  Github</div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
-          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-            <a href="#" title="Login with Google" class="button btn-flat float-right hidden w-inline-block">
-              <div class="w-row">
-                <div class="w-col w-col-3 w-col-tiny-3 w-col-small-3"><img src="images/google-1.png" class="pic-icon"></div>
-                <div class="w-col w-col-9 w-col-tiny-9 w-col-small-9">
-                  <div class="small-text">  Google</div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
         <div class="modal-overlay div-block-2 div-block-3">
           <div id="my_account" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
             <h2 class="modal-header">My account</h2>
