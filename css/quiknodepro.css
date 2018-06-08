@@ -797,6 +797,9 @@ a {
 }
 
 .modal-header.section-heading {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1eb7e3;
   color: #1eb7e3;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1049,9 +1052,18 @@ a {
   display: block;
   width: 100%;
   max-width: 450px;
-  margin-top: 25%;
+  margin-top: 20%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.login--form.invite-form {
+  margin-top: 15%;
+}
+
+.login--form.register {
+  max-width: 800px;
+  margin-top: 15%;
 }
 
 .pic-icon {
@@ -1468,6 +1480,19 @@ a {
 
 .social.last {
   margin-right: 0px;
+}
+
+.column-12 {
+  padding-right: 0px;
+}
+
+.qr-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 991px) {
