@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--  Last Published: Mon Jul 30 2018 14:40:36 GMT+0000 (UTC)  -->
-<html data-wf-page="5ad50471b80230c9785812f1" data-wf-site="5a96bd26892ae8000194cd45">
+<html data-wf-page="5b1ffe1847121fa5f8f96269" data-wf-site="5a96bd26892ae8000194cd45">
 <head>
   <meta charset="utf-8">
-  <title>Security</title>
-  <meta content="Security" property="og:title">
+  <title>Admin - Dashboard</title>
+  <meta content="Admin - Dashboard" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -67,16 +67,16 @@
   </div>
   <div class="w-form">
     <form id="email-form" name="email-form" data-name="Email Form">
-      <div data-collapse="medium" data-animation="over-left" data-duration="400" id="particles-back" class="navbar header w-nav">
+      <div data-collapse="medium" data-animation="over-left" data-duration="400" id="particles-back" class="navbar admin w-nav">
         <div class="menu-button w-nav-button">
           <div class="w-icon-nav-menu"></div>
-        </div><a href="#" class="brand w-clearfix w-nav-brand"><img src="images/quiknode_pro_long.png" srcset="images/quiknode_pro_long-p-500.png 500w, images/quiknode_pro_long.png 561w" sizes="(max-width: 767px) 110.71875px, 166.078125px" class="logo"></a>
-        <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link"><span class="icon"></span><br>Dashboard</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Instances</a><a href="users.html" class="nav-link w-nav-link"><span class="icon"><br xmlns="http://www.w3.org/1999/xhtml"></span>Users</a><a href="security.html" class="nav-link w-nav-link w--current"><span class="icon"></span><br>security</a><a href="#" class="nav-link mode-switch w-nav-link"><span class="icon"></span><br>UI MODE</a>
+        </div><a href="#" class="brand w-clearfix w-nav-brand"><img src="images/quiknode_pro_long.png" srcset="images/quiknode_pro_long-p-500.png 500w, images/quiknode_pro_long.png 561w" sizes="(max-width: 767px) 110.71875px, 166.078125px" class="logo"><div class="top-admin">ADMIN</div></a>
+        <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link"><span class="icon"></span><br>Dashboard</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Accounts</a><a href="users.html" class="nav-link w-nav-link"><span class="icon"><br xmlns="http://www.w3.org/1999/xhtml"></span>Users</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Instances</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"><br></span>Reports</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"><br></span>Logs</a><a href="security.html" class="nav-link w-nav-link"><span class="icon"></span><br>security</a><a href="#" class="nav-link mode-switch w-nav-link"><span class="icon"></span><br>UI MODE</a>
           <div data-delay="0" class="nav-link w-dropdown">
             <div class="dropdown-toggle-2 w-dropdown-toggle">
               <div class="text-block-3"><span class="icon"></span><br>HELP</div>
             </div>
-            <nav class="dropdown-list w-dropdown-list"><a target="_blank" href="how-to.html" class="dropdown-link w-dropdown-link">USer Guide</a><a href="https://twitter.com/quiknode" target="_blank" class="dropdown-link w-dropdown-link">TWEETER</a><a href="https://quiknode.io/slack" target="_blank" class="dropdown-link w-dropdown-link">SLACK</a></nav>
+            <nav class="w-dropdown-list"><a href="https://twitter.com/quiknode" target="_blank" class="dropdown-link w-dropdown-link">TWEETER</a><a href="http://quiknode.io/slack" target="_blank" class="dropdown-link w-dropdown-link">SLACK</a></nav>
           </div><a href="#" class="nav-link w-nav-link"><span class="icon"></span><br>Logout</a></nav>
       </div>
       <div class="modal-overlay div-block-2 div-block-3">
@@ -792,119 +792,137 @@
           </div>
         </div>
       </div>
+      <div class="analytics">
+        <h2 data-target="my-account" class="card-heading centered">Global Metrics</h2>
+        <div class="container-box w-row">
+          <div class="column-2 w-col w-col-4 w-col-small-4">
+            <div class="w-row">
+              <div class="w-col w-col-4"><select id="Select-instance" name="Select-instance" data-name="Select instance" class="max500 w-select"><option value="">Account</option><option value="First">All</option><option value="Second">Account name </option><option value="Third">Third Choice</option></select></div>
+              <div class="w-col w-col-4"><select id="Select-instance-3" name="Select-instance-3" data-name="Select Instance 3" class="max500 w-select"><option value="">User</option><option value="First">All</option><option value="Second">Vipul</option><option value="Third">Konstantin</option></select></div>
+              <div class="w-col w-col-4"><select id="Select-instance-4" name="Select-instance-4" data-name="Select Instance 4" class="max500 w-select"><option value="">Instance ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+            </div>
+          </div>
+          <div class="w-col w-col-4 w-col-small-4"><select id="select-metric-2" name="select-metric" data-name="select-metric" class="max500 w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+          <div class="column-3 w-col w-col-4 w-col-small-4"><select id="field" name="field" class="max500 w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+        </div>
+        <div id="chart" class="shadow chart"></div>
+      </div>
       <div class="container-box">
-        <h2 class="card-heading">Manage Security</h2>
-        <div data-duration-in="300" data-duration-out="100" class="w-tabs">
-          <div class="tab-menu w-tab-menu">
-            <a data-w-tab="Api Keys" class="tab-link w-inline-block w-tab-link">
-              <div class="w-row">
-                <div class="w-col w-col-3">
-                  <div class="icon"></div>
-                </div>
-                <div class="w-col w-col-9">
-                  <div class="tab-text">api keys</div>
-                </div>
-              </div>
+        <div class="mb-40 w-row">
+          <div class="w-col w-col-6">
+            <h2 data-target="my-account" class="card-heading">Manage</h2>
+            <a href="#" data-target="my_account" title="Account information" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">Accounts</div>
+              <div class="btn-bubble">ETH0.01</div>
             </a>
-            <a data-w-tab="OTP" class="tab-link w-inline-block w-tab-link w--current">
-              <div class="w-row">
-                <div class="w-col w-col-3">
-                  <div class="icon"></div>
-                </div>
-                <div class="w-col w-col-9">
-                  <div class="tab-text">one time passwords</div>
-                </div>
-              </div>
+            <a href="instances.html" title="Manage instances" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">instances</div>
+              <div class="btn-bubble">45</div>
             </a>
-          </div>
-          <div class="tabs-content w-tab-content">
-            <div data-w-tab="Api Keys" class="w-tab-pane">
-              <div>
-                <h6 class="modal-header section-heading">add new key</h6>
-                <div class="w-row">
-                  <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Secret" id="field-5" required="">
-                    <div class="fine-print"><span class="icon small-icon-adj"></span> Make sure to store the Secret value immediately, it will not be shown again!</div>
-                  </div>
-                  <div class="w-col w-col-4"><textarea id="field-6" name="field-6" placeholder="Description" maxlength="5000" class="w-input"></textarea></div>
-                  <div class="column-4 w-col w-col-4">
-                    <a href="#" title="Generate new key" class="button icon-btn w-inline-block">
-                      <div class="w-row">
-                        <div class="w-col w-col-3">
-                          <div class="icon"></div>
-                        </div>
-                        <div class="w-col w-col-9">
-                          <div class="btn-label">GEnerate</div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+            <a href="users.html" title="Manage users" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">users</div>
+              <div class="btn-bubble">4</div>
+            </a>
+            <a href="security.html" title="Manage security settings" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">security</div>
+            </a>
+            <a href="security.html" title="Manage security settings" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"><br></div>
+              <div class="icon-btn-label">LOGS</div>
+            </a>
+            <a href="security.html" title="Manage security settings" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"><br></div>
+              <div class="icon-btn-label">Reports</div>
+            </a>
+            <div class="system-updates admin-updates">
+              <h2 class="card-heading">Recent events</h2>
+              <div class="max-width w-row">
+                <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2">
+                  <div class="icon grey-text centered"></div>
                 </div>
-                <h6 class="modal-header section-heading mt-40">My keys</h6>
-                <div class="w-row">
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="modal-header smaller">key</h6>
-                  </div>
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="modal-header smaller">description</h6>
-                  </div>
-                  <div class="column-4 w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
-                </div>
-                <div class="w-row">
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="text centered">04cf5e00-d8eb-4307-99a1-c81991bb7c93</h6>
-                  </div>
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><textarea id="field-6" name="field-6" placeholder="John&#x27;s main access" maxlength="5000" class="description-field w-input"></textarea></div>
-                  <div class="column-4 w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 w-button"></a></div>
+                <div class="w-col w-col-10 w-col-small-10 w-col-tiny-10">
+                  <div class="grey-text small-text">Instance suspended: <a href="#"><strong class="text-link inline">vigorously-peaceful-meerkat</strong></a></div>
                 </div>
               </div>
-            </div>
-            <div data-w-tab="OTP" class="w-tab-pane w--tab-active">
-              <h6 class="modal-header section-heading">generate new One time password</h6>
-              <div class="w-row">
-                <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><textarea id="field-6" name="field-6" placeholder="Description" maxlength="5000" class="description-field w-input"></textarea></div>
-                <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack">
-                  <a href="#" title="Generate New One Time Password" class="button icon-btn w-inline-block">
-                    <div class="w-row">
-                      <div class="w-col w-col-3">
-                        <div class="icon"></div>
-                      </div>
-                      <div class="w-col w-col-9">
-                        <div class="btn-label">Generate</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" title="Send generated OTP to user" class="button icon-btn w-inline-block">
-                    <div class="w-row">
-                      <div class="w-col w-col-3">
-                        <div class="icon"></div>
-                      </div>
-                      <div class="w-col w-col-9">
-                        <div class="btn-label">email to user</div>
-                      </div>
-                    </div>
-                  </a>
+              <div class="max-width w-row">
+                <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2">
+                  <div class="icon grey-text centered"></div>
                 </div>
-                <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><img src="images/QR-code-example.jpg" srcset="images/QR-code-example-p-500.jpeg 500w, images/QR-code-example-p-800.jpeg 800w, images/QR-code-example.jpg 842w" sizes="(max-width: 479px) 63vw, (max-width: 767px) 27vw, 150px" class="qr-img"></div>
-              </div>
-              <h6 class="modal-header section-heading">ACTIVE passwords</h6>
-              <div class="card list">
-                <div class="w-row">
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="modal-header smaller">IMAGE</h6>
-                  </div>
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="modal-header smaller">description</h6>
-                  </div>
-                  <div class="column-4 w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
-                </div>
-                <div class="w-row">
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><img src="images/QR-code-example.jpg" srcset="images/QR-code-example-p-500.jpeg 500w, images/QR-code-example-p-800.jpeg 800w, images/QR-code-example.jpg 842w" sizes="(max-width: 479px) 26vw, (max-width: 767px) 27vw, 150px" class="qr-img"></div>
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><textarea id="field-6" name="field-6" placeholder="John&#x27;s main access" maxlength="5000" class="description-field w-input"></textarea></div>
-                  <div class="column-4 w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 w-button"></a></div>
+                <div class="w-col w-col-10 w-col-small-10 w-col-tiny-10">
+                  <div class="grey-text small-text">Account created</div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="w-col w-col-6">
+            <h2 data-target="my-account" class="card-heading">Quik Create</h2>
+            <a href="#" data-target="my_account" title="Account information" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">New account</div>
+            </a>
+            <a href="#" data-target="add_instance" title="Launch new instance" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">new instance</div>
+            </a>
+            <a href="#" data-target="add_user" title="Add new user" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">new user</div>
+            </a>
+            <a href="#" data-target="add_api" title="Create new API key" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">new api key</div>
+            </a>
+            <a href="#" data-target="add_otp" title="Create new one-time-password" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"></div>
+              <div class="icon-btn-label">new otp</div>
+            </a>
+            <a href="#" data-target="add_otp" title="Create new one-time-password" class="button icon-btn mr-10 w-inline-block">
+              <div class="icon"><br></div>
+              <div class="icon-btn-label">new Report</div>
+            </a>
+          </div>
+        </div>
+        <div class="row-4 w-row">
+          <div class="w-col w-col-6">
+            <h2 data-target="my-account" class="card-heading">system Log</h2>
+            <div class="msg-row w-row">
+              <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                <div class="icon"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                <div>12-02-18 Infinitely-peaceful-meerkat created by joe@mail.com</div>
+              </div>
+            </div>
+            <div class="msg-row w-row">
+              <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                <div class="icon"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                <div>12-02-18 joe@mail.com was suspended by Admin</div>
+              </div>
+            </div>
+            <div class="msg-row w-row">
+              <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                <div class="icon"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                <div>12-02-18 New user added by Admin</div>
+              </div>
+            </div>
+            <div class="msg-row w-row">
+              <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                <div class="icon"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                <div>12-02-18 Could not connect to API</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-6"></div>
         </div>
       </div>
     </form>

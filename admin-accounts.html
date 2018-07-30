@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--  Last Published: Mon Jul 30 2018 14:40:36 GMT+0000 (UTC)  -->
-<html data-wf-page="5ad50471b80230c9785812f1" data-wf-site="5a96bd26892ae8000194cd45">
+<html data-wf-page="5b2000bb0622f60d0e23632a" data-wf-site="5a96bd26892ae8000194cd45">
 <head>
   <meta charset="utf-8">
-  <title>Security</title>
-  <meta content="Security" property="og:title">
+  <title>Admin - Accounts</title>
+  <meta content="Admin - Accounts" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -71,7 +71,7 @@
         <div class="menu-button w-nav-button">
           <div class="w-icon-nav-menu"></div>
         </div><a href="#" class="brand w-clearfix w-nav-brand"><img src="images/quiknode_pro_long.png" srcset="images/quiknode_pro_long-p-500.png 500w, images/quiknode_pro_long.png 561w" sizes="(max-width: 767px) 110.71875px, 166.078125px" class="logo"></a>
-        <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link"><span class="icon"></span><br>Dashboard</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Instances</a><a href="users.html" class="nav-link w-nav-link"><span class="icon"><br xmlns="http://www.w3.org/1999/xhtml"></span>Users</a><a href="security.html" class="nav-link w-nav-link w--current"><span class="icon"></span><br>security</a><a href="#" class="nav-link mode-switch w-nav-link"><span class="icon"></span><br>UI MODE</a>
+        <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link"><span class="icon"></span><br>Dashboard</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Instances</a><a href="users.html" class="nav-link w-nav-link"><span class="icon"><br xmlns="http://www.w3.org/1999/xhtml"></span>Users</a><a href="security.html" class="nav-link w-nav-link"><span class="icon"></span><br>security</a><a href="#" class="nav-link mode-switch w-nav-link"><span class="icon"></span><br>UI MODE</a>
           <div data-delay="0" class="nav-link w-dropdown">
             <div class="dropdown-toggle-2 w-dropdown-toggle">
               <div class="text-block-3"><span class="icon"></span><br>HELP</div>
@@ -793,114 +793,151 @@
         </div>
       </div>
       <div class="container-box">
-        <h2 class="card-heading">Manage Security</h2>
-        <div data-duration-in="300" data-duration-out="100" class="w-tabs">
-          <div class="tab-menu w-tab-menu">
-            <a data-w-tab="Api Keys" class="tab-link w-inline-block w-tab-link">
-              <div class="w-row">
-                <div class="w-col w-col-3">
-                  <div class="icon"></div>
-                </div>
-                <div class="w-col w-col-9">
-                  <div class="tab-text">api keys</div>
-                </div>
+        <div class="padded-block">
+          <h2 class="card-heading">Accounts</h2>
+          <div class="w-row">
+            <div class="nopad w-col w-col-6">
+              <a href="#" data-target="add_user" title="Create User" class="button icon-btn small w-inline-block">
+                <div class="icon"></div>
+              </a>
+              <a href="#" data-target="my_account" title="Toggle view mode" class="button btn-flat no-border w-inline-block">
+                <div data-targe="my_account" class="icon"></div>
+              </a><select id="field-7" name="field-7" title="Sort users" class="input-field inline-flat w-select"><option value="">Sort By...</option><option value="First">Creation Date</option><option value="Second">Name</option><option value="Third">Third Choice</option></select>
+              <a href="#" data-target="my_account" title="Sort Order" class="button btn-flat no-border w-inline-block">
+                <div data-targe="my_account" class="icon"></div>
+              </a>
+            </div>
+            <div class="column-10 w-col w-col-6">
+              <div class="search-div">
+                <a href="#" data-target="my_account" title="Sort Order" class="button btn-flat no-border input-icon w-inline-block">
+                  <div data-targe="my_account" class="icon"></div>
+                </a><input type="text" class="input-field inline max75 search-field w-input" maxlength="256" name="field-8" data-name="Field 8" placeholder="Search Users" id="field-8" required="">
+                <a href="#" data-target="my_account" title="Clear results" class="button btn-flat no-border clear-input w-inline-block">
+                  <div data-targe="my_account" class="icon"></div>
+                </a>
               </div>
-            </a>
-            <a data-w-tab="OTP" class="tab-link w-inline-block w-tab-link w--current">
-              <div class="w-row">
-                <div class="w-col w-col-3">
-                  <div class="icon"></div>
-                </div>
-                <div class="w-col w-col-9">
-                  <div class="tab-text">one time passwords</div>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
-          <div class="tabs-content w-tab-content">
-            <div data-w-tab="Api Keys" class="w-tab-pane">
-              <div>
-                <h6 class="modal-header section-heading">add new key</h6>
-                <div class="w-row">
-                  <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Secret" id="field-5" required="">
-                    <div class="fine-print"><span class="icon small-icon-adj"></span> Make sure to store the Secret value immediately, it will not be shown again!</div>
-                  </div>
-                  <div class="w-col w-col-4"><textarea id="field-6" name="field-6" placeholder="Description" maxlength="5000" class="w-input"></textarea></div>
-                  <div class="column-4 w-col w-col-4">
-                    <a href="#" title="Generate new key" class="button icon-btn w-inline-block">
-                      <div class="w-row">
-                        <div class="w-col w-col-3">
-                          <div class="icon"></div>
-                        </div>
-                        <div class="w-col w-col-9">
-                          <div class="btn-label">GEnerate</div>
-                        </div>
+          <a href="#" data-target="my_account" class="button btn-flat no-border hidden w-inline-block">
+            <div data-targe="my_account" class="icon"></div>
+          </a><a href="dashboard.html" data-target="my_account" class="button btn-flat no-border float-right w-inline-block"></a>
+          <a href="#" data-target="my_account" class="button btn-flat no-border hidden w-inline-block">
+            <div data-targe="my_account" class="icon"></div>
+          </a>
+          <div class="bulk-actions"><select id="field-10" name="field-10" title="Actions on selected users" class="input-field inline-flat w-select"><option value="">Bulk Actions...</option><option value="First">Delete Selected</option><option value="Second">Suspend Selected</option><option value="Third">Clone Selected</option></select><a href="#" title="Toggle all users" class="text-link inline ml-10 select-all">Select All</a></div>
+        </div>
+        <div class="users-dashboard">
+          <div class="card flex">
+            <div class="info-row shadow"><img src="images/Optimus_Prime_Helmet.png" class="userpic">
+              <div class="name-label bold">Optimus Prime Jr</div>
+              <div class="small-pill">
+                <div class="text-block">admin</div>
+              </div>
+              <div class="grey-text">iamprime@gmail.com</div>
+              <p class="stat-block">Last login: Today</p>
+              <div class="hover-menu"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+            </div>
+            <div class="info-row shadow"><img src="images/Optimus_Prime_Helmet.png" class="userpic">
+              <div class="name-label bold">Optimus Prime Jr</div>
+              <div class="small-pill">
+                <div class="text-block">admin</div>
+              </div>
+              <div class="grey-text">iamprime@gmail.com</div>
+              <p class="stat-block">Last login: Today</p>
+              <div class="hover-menu"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+            </div>
+            <div class="info-row shadow"><img src="images/Optimus_Prime_Helmet.png" class="userpic">
+              <div class="name-label bold">Optimus Prime Jr</div>
+              <div class="small-pill">
+                <div class="text-block">admin</div>
+              </div>
+              <div class="grey-text">iamprime@gmail.com</div>
+              <p class="stat-block">Last login: Today</p>
+              <div class="hover-menu"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+            </div>
+            <div class="info-row shadow"><img src="images/Optimus_Prime_Helmet.png" class="userpic">
+              <div class="name-label bold">Optimus Prime Jr</div>
+              <div class="small-pill">
+                <div class="text-block">admin</div>
+              </div>
+              <div class="grey-text">iamprime@gmail.com</div>
+              <p class="stat-block">Last login: Today</p>
+              <div class="hover-menu"><a href="#" title="Delete user" data-target="delete_user" class="button btn-round btn-m w-button"></a><a href="#" title="Suspend user" data_target="suspend_user" class="button btn-round btn-m w-button"></a><a href="#" title="Settings" data-target="edit_user" class="button btn-round btn-m w-button"></a></div>
+            </div>
+          </div>
+          <div class="card list">
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-medium-1 w-col-tiny-1 w-col-small-1">
+                <div class="row-checkbox users-check w-checkbox"><input type="checkbox" id="checkbox-9" name="checkbox-9" data-name="Checkbox 9" class="checkbox-field w-checkbox-input"><label for="checkbox-9" class="field-label w-form-label">Checkbox 9</label></div>
+              </div>
+              <div class="w-col w-col-11 w-col-medium-11 w-col-tiny-11 w-col-small-11">
+                <div class="info-row list">
+                  <div class="w-row">
+                    <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline">
+                      <div class="small-pill">
+                        <div class="text-block">admin</div>
                       </div>
-                    </a>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div class="name-label inline bold">Optimus Prime Jr</div>
+                    </div>
+                    <div class="w-col w-col-3">
+                      <div class="grey-text">iamprime@gmail.com</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <p class="grey-text">Last login: Today</p>
+                    </div>
                   </div>
-                </div>
-                <h6 class="modal-header section-heading mt-40">My keys</h6>
-                <div class="w-row">
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="modal-header smaller">key</h6>
-                  </div>
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="modal-header smaller">description</h6>
-                  </div>
-                  <div class="column-4 w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
-                </div>
-                <div class="w-row">
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="text centered">04cf5e00-d8eb-4307-99a1-c81991bb7c93</h6>
-                  </div>
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><textarea id="field-6" name="field-6" placeholder="John&#x27;s main access" maxlength="5000" class="description-field w-input"></textarea></div>
-                  <div class="column-4 w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 w-button"></a></div>
                 </div>
               </div>
             </div>
-            <div data-w-tab="OTP" class="w-tab-pane w--tab-active">
-              <h6 class="modal-header section-heading">generate new One time password</h6>
-              <div class="w-row">
-                <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><textarea id="field-6" name="field-6" placeholder="Description" maxlength="5000" class="description-field w-input"></textarea></div>
-                <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack">
-                  <a href="#" title="Generate New One Time Password" class="button icon-btn w-inline-block">
-                    <div class="w-row">
-                      <div class="w-col w-col-3">
-                        <div class="icon"></div>
-                      </div>
-                      <div class="w-col w-col-9">
-                        <div class="btn-label">Generate</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" title="Send generated OTP to user" class="button icon-btn w-inline-block">
-                    <div class="w-row">
-                      <div class="w-col w-col-3">
-                        <div class="icon"></div>
-                      </div>
-                      <div class="w-col w-col-9">
-                        <div class="btn-label">email to user</div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><img src="images/QR-code-example.jpg" srcset="images/QR-code-example-p-500.jpeg 500w, images/QR-code-example-p-800.jpeg 800w, images/QR-code-example.jpg 842w" sizes="(max-width: 479px) 63vw, (max-width: 767px) 27vw, 150px" class="qr-img"></div>
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-medium-1 w-col-tiny-1 w-col-small-1">
+                <div class="row-checkbox users-check w-checkbox"><input type="checkbox" id="checkbox-9" name="checkbox-9" data-name="Checkbox 9" class="checkbox-field w-checkbox-input"><label for="checkbox-10" class="field-label w-form-label">Checkbox 9</label></div>
               </div>
-              <h6 class="modal-header section-heading">ACTIVE passwords</h6>
-              <div class="card list">
-                <div class="w-row">
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="modal-header smaller">IMAGE</h6>
+              <div class="w-col w-col-11 w-col-medium-11 w-col-tiny-11 w-col-small-11">
+                <div class="info-row list">
+                  <div class="w-row">
+                    <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline">
+                      <div class="small-pill">
+                        <div class="text-block">admin</div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div class="name-label inline bold">Optimus Prime Jr</div>
+                    </div>
+                    <div class="w-col w-col-3">
+                      <div class="grey-text">iamprime@gmail.com</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <p class="grey-text">Last login: Today</p>
+                    </div>
                   </div>
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-                    <h6 class="modal-header smaller">description</h6>
-                  </div>
-                  <div class="column-4 w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
                 </div>
-                <div class="w-row">
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><img src="images/QR-code-example.jpg" srcset="images/QR-code-example-p-500.jpeg 500w, images/QR-code-example-p-800.jpeg 800w, images/QR-code-example.jpg 842w" sizes="(max-width: 479px) 26vw, (max-width: 767px) 27vw, 150px" class="qr-img"></div>
-                  <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><textarea id="field-6" name="field-6" placeholder="John&#x27;s main access" maxlength="5000" class="description-field w-input"></textarea></div>
-                  <div class="column-4 w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 w-button"></a></div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-medium-1 w-col-tiny-1 w-col-small-1">
+                <div class="row-checkbox users-check w-checkbox"><input type="checkbox" id="checkbox-9" name="checkbox-9" data-name="Checkbox 9" class="checkbox-field w-checkbox-input"><label for="checkbox-10" class="field-label w-form-label">Checkbox 9</label></div>
+              </div>
+              <div class="w-col w-col-11 w-col-medium-11 w-col-tiny-11 w-col-small-11">
+                <div class="info-row list">
+                  <div class="w-row">
+                    <div class="w-col w-col-1"><img src="images/Optimus_Prime_Helmet.png" class="userpic inline">
+                      <div class="small-pill">
+                        <div class="text-block">admin</div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div class="name-label inline bold">Optimus Prime Jr</div>
+                    </div>
+                    <div class="w-col w-col-3">
+                      <div class="grey-text">iamprime@gmail.com</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <p class="grey-text">Last login: Today</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
