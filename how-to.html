@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<!--  Last Published: Mon Jul 30 2018 14:05:06 GMT+0000 (UTC)  -->
+<html data-wf-page="5b3a4c67c0be08453f15ace4" data-wf-site="5a96bd26892ae8000194cd45">
+<head>
+  <meta charset="utf-8">
+  <title>How To</title>
+  <meta content="How To" property="og:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/components.css" rel="stylesheet" type="text/css">
+  <link href="css/quiknodepro.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
+        }
+      });
+    </script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="images/quiknode-logo_favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+  <style>
+      select.dark,
+      input.dark,
+      textarea.dark {
+        background: none !important;
+        color: #66D1F2 !important;
+        border-color: #66D1F2 !important;
+      }
+      option.dark,
+      select option.dark {
+        color: #66D1F2 !important;
+        border-color: #66D1F2 !important;
+        background-color: #4D4D4D;
+      }
+      canvas {
+        top: 0 !important;
+        left: 0 !important;
+        position: absolute !important;
+        z-index: 0 !important;
+      }
+      .nav-link {
+        z-index: 999;
+      }
+    </style>
+</head>
+<body class="main">
+  <div data-collapse="medium" data-animation="over-left" data-duration="400" id="particles-back" class="navbar header w-nav">
+    <div class="menu-button w-nav-button">
+      <div class="w-icon-nav-menu"></div>
+    </div><a href="#" class="brand w-clearfix w-nav-brand"><img src="images/quiknode_pro_long.png" srcset="images/quiknode_pro_long-p-500.png 500w, images/quiknode_pro_long.png 561w" sizes="(max-width: 479px) 88vw, (max-width: 767px) 110.71875px, 166.078125px" class="logo"></a>
+    <nav role="navigation" class="w-nav-menu"><a href="dashboard.html" class="nav-link w-nav-link"><span class="icon"></span><br>Dashboard</a><a href="instances.html" class="nav-link w-nav-link"><span class="icon"></span><br>Instances</a><a href="users.html" class="nav-link w-nav-link"><span class="icon"><br xmlns="http://www.w3.org/1999/xhtml"></span>Users</a><a href="security.html" class="nav-link w-nav-link"><span class="icon"></span><br>security</a><a href="#" class="nav-link mode-switch w-nav-link"><span class="icon"></span><br>UI MODE</a>
+      <div data-delay="0" class="nav-link w-dropdown">
+        <div class="dropdown-toggle-2 w-dropdown-toggle">
+          <div class="text-block-3"><span class="icon"></span><br>HELP</div>
+        </div>
+        <nav class="dropdown-list w-dropdown-list"><a target="_blank" href="how-to.html" class="dropdown-link w-dropdown-link w--current">USer Guide</a><a href="https://twitter.com/quiknode" target="_blank" class="dropdown-link w-dropdown-link">TWEETER</a><a href="https://quiknode.io/slack" target="_blank" class="dropdown-link w-dropdown-link">SLACK</a></nav>
+      </div><a href="#" class="nav-link w-nav-link"><span class="icon"></span><br>Logout</a></nav>
+  </div>
+  <div class="message-modal">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-1">
+          <p class="icon large centered"></p>
+        </div>
+        <div class="w-col w-col-11">
+          <h4 class="modal-msg-text">Cannot delete instance: Access denied</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-form">
+    <form id="email-form" name="email-form" data-name="Email Form">
+      <div class="modal-overlay div-block-2 div-block-3">
+        <div id="my_account" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">My account</h2>
+          <div class="w-container">
+            <div class="centered text">Balance: ETH0.01</div>
+            <div class="centered">
+              <a href="#" class="button icon-btn mr-10 disabled w-inline-block">
+                <div class="w-row">
+                  <div class="w-col w-col-3 w-col-medium-3">
+                    <div class="icon"></div>
+                  </div>
+                  <div class="w-col w-col-9 w-col-medium-9">
+                    <div class="btn-label">Add funds</div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="button icon-btn mr-10 w-inline-block">
+                <div class="w-row">
+                  <div class="w-col w-col-3 w-col-medium-3 w-col-small-small-stack">
+                    <div class="icon"></div>
+                  </div>
+                  <div class="w-col w-col-9 w-col-medium-9 w-col-small-small-stack">
+                    <div class="btn-label">Generate OTP</div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" title="Delete permanently" class="button icon-btn disabled w-inline-block">
+                <div class="w-row">
+                  <div class="w-col w-col-3 w-col-medium-3">
+                    <div class="icon"></div>
+                  </div>
+                  <div class="w-col w-col-9 w-col-medium-9">
+                    <div class="btn-label">Terminate</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="w-row">
+              <div class="w-clearfix w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Newman" id="field-2" required=""></div>
+                </div>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Password" id="field-2" required=""></div>
+                </div>
+                <a href="#" class="button icon-btn float-right w-inline-block">
+                  <div class="w-row">
+                    <div class="w-col w-col-3 w-col-medium-3">
+                      <div class="icon"></div>
+                    </div>
+                    <div class="w-col w-col-9 w-col-medium-9">
+                      <div class="btn-label">Reset password</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="mail@usps.com" id="field-2" required=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+            <div class="w-row">
+              <div class="w-col w-col-3 w-col-small-small-stack w-col-tiny-tiny-stack w-col-medium-3">
+                <div class="icon"></div>
+              </div>
+              <div class="w-col w-col-9 w-col-small-small-stack w-col-tiny-tiny-stack w-col-medium-9">
+                <div class="btn-label">SAVE </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="show_metrics" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">instance metrics</h2>
+          <div class="centered">
+            <div class="w-row">
+              <div class="w-col w-col-6"><select id="select-metric" name="select-metric" data-name="Select Metric" class="input-field inline mr-10 w-select"><option value="">Metric ...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="w-col w-col-6"><select id="field-9" name="field-9" data-name="Field 9" class="input-field inline w-select"><option value="">Period</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+            </div>
+          </div>
+          <div class="analytics">
+            <div id="chart" class="shadow chart"></div>
+          </div>
+        </div>
+        <div id="show_otp" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">one time password</h2>
+          <div class="centered">Created on: 12-12-2018<br>Used on: 12-13-2018 10:45am<br>Assigned to: Optimus Prime Jr</div><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="otp-img-large">
+          <div class="centered mt-10">
+            <a href="#" class="button icon-btn mr-10 disabled w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">email to user</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Delete permanently" class="button icon-btn w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">revoke</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="add_api" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">Create api key</h2>
+          <div>
+            <div class="w-row">
+              <div class="w-col w-col-4"><input type="text" class="w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Secret" id="field-5" required="">
+                <div class="fine-print">Make sure to store Secret value somewhere safe immediately. It will not be shown again!</div>
+              </div>
+              <div class="w-col w-col-4"><textarea id="field-6" name="field-6" placeholder="Description" maxlength="5000" class="w-input"></textarea></div>
+              <div class="column-4 w-clearfix w-col w-col-4">
+                <a href="#" class="button icon-btn float-right w-inline-block">
+                  <div class="w-row">
+                    <div class="w-col w-col-3">
+                      <div class="icon"></div>
+                    </div>
+                    <div class="w-col w-col-9">
+                      <div class="btn-label">GEnerate</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+            <div class="w-row">
+              <div class="w-col w-col-3">
+                <div class="icon"></div>
+              </div>
+              <div class="w-col w-col-9">
+                <div class="btn-label">Save</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="suspend_user" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">Suspend user?</h2>
+          <div class="w-container">
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-small-1">
+                <div class="icon icon-xl"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11">
+                <p>This action will suspend ALL of this user&#x27;s credentials until re-activated. <br>Are you sure you want to continue?</p>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="delete_api" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">delete api key?</h2>
+          <div class="w-container">
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-small-1">
+                <div class="icon icon-xl"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11">
+                <p>This action will permanently remove this API key. Users will no longer be able to use this key to access the API.</p>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="delete_otp" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">delete One time password?</h2>
+          <div class="w-container">
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-small-1">
+                <div class="icon icon-xl"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11">
+                <p class="paragraph-2">This action will permanently remove this password. This user will no longer be able to use it login to the system.</p>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="delete_user" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">delete user?</h2>
+          <div class="w-container">
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-small-1 w-col-tiny-tiny-stack">
+                <div class="icon icon-xl"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11 w-col-tiny-tiny-stack">
+                <p>This action will permanently delete this user. This cannot be undone. <br>Are you sure you wish to continue?</p>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="suspend_instance" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">suspend instance?</h2>
+          <div class="w-container">
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-small-1 w-col-tiny-tiny-stack">
+                <div class="icon icon-xl"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11 w-col-tiny-tiny-stack">
+                <p>This action will make this instance unavailable for all users. <br>All configurations settings will be saved.<br>Are you sure you wish to continue?</p>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CONTINUE</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="button icon-btn mr-10 float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">CANCEL</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="add_user" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">add user</h2>
+          <div class="w-container">
+            <div class="btm10 w-row">
+              <div class="w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Newman" id="field-2" required=""></div>
+                </div>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="mail@usps.com" id="field-2" required=""></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Password" id="field-2" required=""></div>
+                </div>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Repeat password" id="field-2" required=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <h4 class="modal-header subheader">Assign API Key</h4><select id="field-3" name="field-3" class="w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="w-col w-col-6">
+                <h4 class="modal-header subheader">permissions</h4>
+                <div class="checkbox w-checkbox"><input type="checkbox" id="checkbox-8" name="checkbox-8" data-name="Checkbox 8" class="checkbox-field left w-checkbox-input"><label for="checkbox-9" class="checkbox-label w-form-label">add users</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Save</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="add_user" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">Reset password</h2>
+          <div class="w-container">
+            <div class="btm10 w-row">
+              <div class="w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11"><input type="password" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Type new password" id="field-2" required=""></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="password" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Repeat password" id="field-2" required=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Update</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="add_otp" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">generate one time password</h2>
+          <div class="w-container">
+            <div class="mb-10 mt-20 w-row">
+              <div class="w-col w-col-4"><select id="field-3" name="field-3" class="w-select"><option value="">Select User...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="w-clearfix w-col w-col-4">
+                <a href="#" class="button icon-btn float-right w-inline-block">
+                  <div class="w-row">
+                    <div class="w-col w-col-3">
+                      <div class="icon"></div>
+                    </div>
+                    <div class="w-col w-col-9">
+                      <div class="btn-label">Generate</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="button icon-btn float-right disabled w-inline-block">
+                  <div class="w-row">
+                    <div class="w-col w-col-3">
+                      <div class="icon"></div>
+                    </div>
+                    <div class="w-col w-col-9">
+                      <div class="btn-label">email to user</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="centered w-col w-col-4"><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg"></div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Save</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="edit_user" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">Edit User</h2>
+          <div class="centered">
+            <a href="#" title="Temporarily disable" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">suspend</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Delete permanently" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">delete</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Create new user with same permissions" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">clone</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="button icon-btn w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Generate OTP</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-container">
+            <div class="btm10 w-row">
+              <div class="w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Newman" id="field-2" required=""></div>
+                </div>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="mail@usps.com" id="field-2" required=""></div>
+                </div>
+              </div>
+              <div class="w-clearfix w-col w-col-6">
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Password" id="field-2" required=""></div>
+                </div>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Repeat password" id="field-2" required=""></div>
+                </div>
+                <a href="#" class="button icon-btn float-left w-inline-block">
+                  <div class="w-row">
+                    <div class="w-col w-col-3">
+                      <div class="icon"></div>
+                    </div>
+                    <div class="w-col w-col-9">
+                      <div class="btn-label">Reset password</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <h4 class="modal-header subheader">API KEYS</h4><select id="field-3" name="field-3" class="w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="w-col w-col-6">
+                <h4 class="modal-header subheader">permissions</h4>
+                <div class="checkbox w-checkbox"><input type="checkbox" id="checkbox-8" name="checkbox-8" data-name="Checkbox 8" class="checkbox-field left w-checkbox-input"><label for="checkbox-9" class="checkbox-label w-form-label">add users</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Save</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="add_instance" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">create instance</h2>
+          <div class="w-container">
+            <div class="btm10 w-row">
+              <div class="w-col w-col-6">
+                <h4 class="modal-header subheader">info</h4>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg mt10"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Name" id="field-2" required=""></div>
+                </div>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><textarea id="field-4" name="field-4" placeholder="Description" maxlength="5000" class="w-input"></textarea></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <h4 class="modal-header subheader">Validators</h4><select id="field-3" name="field-3" class="w-select"><option value="">Add New...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select>
+                <div class="input-block"><label class="name-label">http request referer</label>
+                  <div class="icon-input w-row">
+                    <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                      <div class="icon icon-lg mt10"></div>
+                    </div>
+                    <div class="w-col w-col-9 w-col-small-9 w-col-tiny-9"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Referrer" id="field-2" required=""></div>
+                    <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 float-right w-button"></a></div>
+                  </div>
+                </div>
+                <div class="input-block"><label class="name-label">http token validation</label>
+                  <div class="icon-input w-row">
+                    <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                      <div class="icon icon-lg mt10"></div>
+                    </div>
+                    <div class="w-col w-col-9 w-col-small-9 w-col-tiny-9"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Token" id="field-2" required=""></div>
+                    <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 float-right w-button"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Launch</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="edit_instance" class="modal-content w-clearfix"><a href="#" title="Delete" class="button btn-round btn-m float-right close-btn w-button"></a>
+          <h2 class="modal-header">Edit Instance</h2><label class="name-label centered bold">Vigorously-peaceful-meerkat-4</label>
+          <div class="centered">
+            <a href="#" title="Temporarily turn off" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">suspend</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Delete permanently" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">delete</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" title="Create new identical instance" class="button icon-btn mr-10 w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">clone</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-container">
+            <div class="btm10 w-row">
+              <div class="w-col w-col-6">
+                <h4 class="modal-header subheader">Description</h4>
+                <div class="icon-input w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="icon icon-lg"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11"><textarea id="field-4" name="field-4" placeholder="Description" maxlength="5000" class="w-input"></textarea></div>
+                </div>
+                <h4 class="modal-header subheader">DEVELOPER ACCESS</h4>
+                <div class="name-label mb-10 bold">HTTP PROVIDER</div>
+                <p class="copy">http://peaceful-meerkat-999.quiknode.io/eewrwrwerew/898989898989898</p>
+                <div class="name-label mb-10 bold">Web Socket HTTP AUTH</div>
+                <p><span class="copy">wss://peaceful-meerkat-999.quiknode.io/eewrwrwerew/898989898989898<br xmlns="http://www.w3.org/1999/xhtml"></span><br>Username: email@email.com<br>Password: your current password</p>
+                <div class="name-label mb-10 bold">Web Socket TOken auth</div>
+                <p class="copy">wss://peaceful-meerkat-999.quiknode.io/eewrwrwerew/898989898989898</p>
+              </div>
+              <div class="w-col w-col-6">
+                <h4 class="modal-header subheader">Validators</h4><select id="field-3" name="field-3" class="w-select"><option value="">Add New...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select>
+                <div class="input-block"><label class="name-label">http request referer</label>
+                  <div class="icon-input w-row">
+                    <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                      <div class="icon icon-lg mt10"></div>
+                    </div>
+                    <div class="w-col w-col-9 w-col-small-9 w-col-tiny-9"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Referrer" id="field-2" required=""></div>
+                    <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 float-right w-button"></a></div>
+                  </div>
+                </div>
+                <div class="input-block"><label class="name-label">http token validation</label>
+                  <div class="icon-input w-row">
+                    <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                      <div class="icon icon-lg mt10"></div>
+                    </div>
+                    <div class="w-col w-col-9 w-col-small-9 w-col-tiny-9"><input type="text" class="w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Token" id="field-2" required=""></div>
+                    <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="#" title="Delete" class="button btn-round btn-m flush-top ml-10 float-right w-button"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="action-btns">
+            <a href="#" class="button icon-btn save-btn float-right w-inline-block">
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <div class="icon"></div>
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="btn-label">Save</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-box">
+        <div data-collapse="all" data-animation="default" data-duration="400" class="search-nav header w-nav">
+          <div class="search-nav-btn w-nav-button"><span class="icon">help</span><span class="icon centered white"><br></span></div>
+          <div></div>
+          <nav role="navigation" class="nav-help w-nav-menu">
+            <div class="w-row">
+              <div class="w-col w-col-4">
+                <h2 data-target="my-account" class="card-heading"><a href="instances.html"><span class="icon"></span></a> Instances</h2>
+                <ul class="unordered-list">
+                  <li><a href="#instance-create" class="text-link">Creating a new nstance</a></li>
+                  <li><a href="#istance-access" class="text-link">Accessing your instance. Web Socket and HTTP access.</a></li>
+                  <li><a href="#instance-operations" class="text-link">Instance operations: Suspend, Remove, Clone.</a></li>
+                  <li><a href="#instance-manage" class="text-link">Managing multiple instances.</a></li>
+                  <li><a href="#instance-metrics" class="text-link">Monitoring instance activity (Metrics).</a></li>
+                </ul>
+              </div>
+              <div class="w-col w-col-4">
+                <h2 data-target="my-account" class="card-heading"><a href="instances.html"><span class="icon"></span></a> Users</h2>
+                <ul class="unordered-list">
+                  <li><a href="#user-add" class="text-link">Adding a new user.</a></li>
+                  <li><a href="#user-permissions" class="text-link">User permissions.</a></li>
+                  <li><a href="#user-operations" class="text-link">User operations: Suspend, Remove, Clone</a></li>
+                  <li><a href="#user-mange" class="text-link">Managing multiple users.</a></li>
+                </ul>
+              </div>
+              <div class="w-col w-col-4">
+                <h2 data-target="my-account" class="card-heading"><a href="instances.html"><span class="icon"> </span></a>Security</h2>
+                <ul class="unordered-list">
+                  <li><a href="#security-keys" class="text-link">Managing API keys.</a></li>
+                  <li><a href="#security-otp" class="text-link">One-Time-Passwords (OTP).</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-4">
+                <h2 data-target="my-account" class="card-heading mt-20"><a href="instances.html"><span class="icon">$</span></a> Account Management</h2>
+                <ul class="unordered-list">
+                  <li><a href="#account-funds" class="text-link">Account balance.</a></li>
+                </ul>
+              </div>
+              <div class="w-col w-col-4">
+                <h2 data-target="my-account" class="card-heading mt-20"><a href="instances.html"><span class="icon"></span></a> Contact Support</h2>
+                <ul class="unordered-list">
+                  <li><a href="#account-funds" class="text-link">Slack</a></li>
+                </ul>
+                <ul class="unordered-list">
+                  <li><a href="#account-funds" class="text-link">Twitter</a></li>
+                </ul>
+                <ul class="unordered-list">
+                  <li><a href="#account-funds" class="text-link">Email</a></li>
+                </ul>
+              </div>
+              <div class="w-col w-col-4"></div>
+            </div>
+          </nav>
+        </div>
+        <div class="w-container">
+          <h1 id="instances" class="heading divider"><span class="icon"></span> Instances</h1>
+          <h1 id="instance-create" class="card-heading">Creating An Instance</h1>
+          <p class="paragraph-3">There are two ways of creating new QuikNode instances:<br>‍<br>1. From the Dashboard. Simply click &#x27;<strong>New Instance</strong>&#x27; button under Quik Create.</p>
+          <a href="#" data-target="add_instance" title="Launch new instance" class="button icon-btn mr-10 w-inline-block">
+            <div class="icon"></div>
+            <div class="icon-btn-label">new instance</div>
+          </a>
+          <p class="paragraph-3">2. From Instances section. Click on the &#x27;+&#x27; button under Instances.</p>
+          <a href="#" data-target="add_user" title="New instance" class="button icon-btn small w-inline-block">
+            <div class="icon"></div>
+          </a>
+          <p class="paragraph-3">You will be presented with a configuration modal. Instance name will be generated automatically. You may enter an optional instance description and click &#x27;<strong>Launch</strong>&#x27;.<br>Once your instance is spun up, it will be listed in Instances section.<br>‍<br></p>
+          <h1 id="istance-access" class="card-heading">Accessing your instance. Web Socket and HTTP access. Validators</h1>
+          <p class="paragraph-3">In order to connect to your Instance, use the generated Web Socket and/or HTTP access links and credentials. To find access URLs, simply click on your instance.<br>Click on any of the links under <strong>DEVELOPER ACCESS</strong> and they will be automatically copied to your clipboard.<br><br>The <strong>VALIDATORS </strong>menu allows you to add additional security validation for accessing your instance. Select the type of validation you wish to use from the dropdown, enter your referer URL and/or http token and click <strong>Save</strong>.<br>To remove a Validator - click on the circular trash icon next to the input field.</p><img src="images/qnp-edit-instance-access.png" srcset="images/qnp-edit-instance-access-p-500.png 500w, images/qnp-edit-instance-access-p-800.png 800w, images/qnp-edit-instance-access-p-1080.png 1080w, images/qnp-edit-instance-access.png 1218w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <h1 id="instance-operations" class="card-heading"><br>Instance operations: Suspend, Remove, Clone.</h1>
+          <p class="paragraph-3">Instances can be temporarily suspended, removed permanently or cloned. Cloning an instance will create a new instance with same <strong>VALIDATORS </strong>and <strong>DESCRIPTION </strong>as current instance. These operations are featured under the Instance name.</p><img src="images/qnp-edit-instance-suspend-delete-clone.png" srcset="images/qnp-edit-instance-suspend-delete-clone-p-500.png 500w, images/qnp-edit-instance-suspend-delete-clone-p-800.png 800w, images/qnp-edit-instance-suspend-delete-clone-p-1080.png 1080w, images/qnp-edit-instance-suspend-delete-clone.png 1218w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <h1 id="instance-manage" class="card-heading"><br>Managing multiple instances.</h1>
+          <p class="paragraph-3">Multiple instances can be easily managed from the Instances section.<br>You can change your view by clicking the Grid button. </p><img src="images/qnp-instances-view.png" class="help-img">
+          <p class="paragraph-3">Instances can be <strong>sorted </strong>by Date of Creation and Name. Clicking on the arrow next to the dropdown specifies ascending or descending order.</p><img src="images/qnp-instances-sort.png" class="help-img">
+          <p class="paragraph-3">While in list view <strong>Bulk Actions</strong> can be performed on multiple instances by selecting them and choosing an appropriate action from the dropdown.</p><img src="images/qnp-instances-bulk.png" class="help-img">
+          <h1 id="instance-metrics" class="card-heading">Monitoring instance activity (Metrics).</h1>
+          <p class="paragraph-3">Instance activity charts can be accessed either from the Dashboard or by viewing/clicking on the mini-chart for each Instance.</p><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="help-img"><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="help-img">
+          <p class="paragraph-3">To <strong>customize metrics view</strong> and view particular metrics use the dropdown filters. </p><img src="images/instance-metrics.JPG" srcset="images/instance-metrics-p-500.jpeg 500w, images/instance-metrics-p-800.jpeg 800w, images/instance-metrics-p-1080.jpeg 1080w, images/instance-metrics.JPG 1592w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <p class="paragraph-3">Note that charts can be <strong>exported </strong>as images or PDF files by clicking on the context menu on top right corner.</p><img src="images/metrics-context.JPG" class="help-img">
+          <h1 id="users" class="heading divider"><span class="icon"></span> Users</h1>
+          <h1 id="user-add" class="card-heading">Adding a new User</h1>
+          <p class="paragraph-3">You can authorize multiple users to use your QuikNode Pro account. Users can have limited permissions or full access to your account and manage other users. There are two ways to add a new User:<br><br>1. From the Dashboard, under Quik Create, simply click the <strong>Add New User</strong> button.</p>
+          <a href="#" data-target="add_user" title="Add new user" class="button icon-btn mr-10 w-inline-block">
+            <div class="icon"></div>
+            <div class="icon-btn-label">new user</div>
+          </a>
+          <p class="paragraph-3"><br>2. You can add a new User from Users section by clicking this button:<br>‍</p>
+          <a href="#" data-target="add_user" title="Create User" class="button icon-btn small w-inline-block">
+            <div class="icon"></div>
+          </a>
+          <p class="paragraph-3"><br>Specify user&#x27;s email, choose a password and hit <strong>Save</strong>.<br>To <strong>edit Users</strong> go to the Users section in main menu and click on the user box or row.<br>‍</p>
+          <h1 id="user-permissions" class="card-heading">User Permissions</h1>
+          <p class="paragraph-3">Your account users can have limited access <strong>permissions </strong>or full <strong>Admin </strong>rights to manage other users. Check the list of available options under PERMISSIONS heading while editing the user.</p><img src="images/qnp-edit-user-permissions.png" srcset="images/qnp-edit-user-permissions-p-500.png 500w, images/qnp-edit-user-permissions-p-800.png 800w, images/qnp-edit-user-permissions.png 1216w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <h1 id="user-operations" class="card-heading">User Operations: Suspend, Remove, Clone</h1>
+          <p class="paragraph-3">Users can be temporarily suspended, deleted permanently or cloned. Cloned users will inherit the same permissions and API keys from the original.</p><img src="images/qnp-edit-user-suspend-delete-clone.png" srcset="images/qnp-edit-user-suspend-delete-clone-p-500.png 500w, images/qnp-edit-user-suspend-delete-clone-p-800.png 800w, images/qnp-edit-user-suspend-delete-clone.png 1216w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <h1 id="user-mange" class="card-heading">Managing multiple users</h1>
+          <p class="paragraph-3">Multiple Users can be easily <strong>managed </strong>from the Users section.<br>You can change your view by clicking the Grid button. </p><img src="images/qnp-users-view.png" srcset="images/qnp-users-view-p-500.png 500w, images/qnp-users-view.png 1210w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <p class="paragraph-3">Users can be <strong>sorted </strong>by Date of Creation and Name. Clicking on the arrow next to the dropdown specifies ascending or descending order.</p><img src="images/qnp-users-sort.png" srcset="images/qnp-users-sort-p-500.png 500w, images/qnp-users-sort.png 1210w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <p class="paragraph-3">While in list view <strong>Bulk Actions</strong> can be performed on multiple Users by selecting them and choosing an appropriate action from the dropdown.</p><img src="images/qnp-users-bulk.png" srcset="images/qnp-users-bulk-p-500.png 500w, images/qnp-users-bulk.png 1210w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <h1 id="security" class="heading divider"><span class="icon"></span> Security</h1>
+          <h1 id="security-keys" class="card-heading">Managing aPI keys</h1>
+          <p>API keys are used to provide programmatic access to the QuikNode Pro system. To <strong>create a new API key, </strong>access the Security section, select API keys tab, provide your own Secret key and click Generate. </p><img src="images/qnp-security-api-key-new.JPG" srcset="images/qnp-security-api-key-new-p-500.jpeg 500w, images/qnp-security-api-key-new-p-800.jpeg 800w, images/qnp-security-api-key-new-p-1080.jpeg 1080w, images/qnp-security-api-key-new.JPG 1330w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <p>To <strong>revoke </strong>an existing API key, simply click on the circular Trash icon next to the key.</p><img src="images/qnp-security-api-key-delete.png" srcset="images/qnp-security-api-key-delete-p-500.png 500w, images/qnp-security-api-key-delete-p-800.png 800w, images/qnp-security-api-key-delete.png 1168w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <h1 id="security-otp" class="card-heading">One Time Passwords (OTP)</h1>
+          <p>One-Time-Passwords (OTP) are single-use access tokens generated by the system in the form of a QR code. These can be used to gain access to your QuikNode Pro account without compromising your main credentials. To generate an OTP, select ONE TIME PASSWORDS tab, enter description and hit Generate. <br>The created QR code contains your OTP, it will only be shown once.</p><img src="images/qnp-security-otp-new.JPG" srcset="images/qnp-security-otp-new-p-500.jpeg 500w, images/qnp-security-otp-new-p-800.jpeg 800w, images/qnp-security-otp-new-p-1080.jpeg 1080w, images/qnp-security-otp-new.JPG 1322w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 728px, 92vw" class="help-img">
+          <p>To revoke an OTP, simply click the circular trash icon next to it in the list.</p><img src="images/qnp-security-otp-delete.png" srcset="images/qnp-security-otp-delete-p-500.png 500w, images/qnp-security-otp-delete.png 609w" sizes="(max-width: 479px) 94vw, (max-width: 641px) 95vw, 609px" class="help-img">
+          <h1 id="account" class="heading divider"><span class="icon"></span> Account Management</h1>
+          <h1 id="account-funds" class="card-heading">Adding funds</h1>
+          <h1 id="support" class="heading divider"><span class="icon"></span> Support Channels</h1><a href="#" class="text-link">Reach us on Twitter</a><a href="#" class="text-link">Join our Slack Channel</a><a href="#" class="text-link">Send us an email</a></div>
+      </div>
+    </form>
+    <div class="w-form-done">
+      <div>Thank you! Your submission has been received!</div>
+    </div>
+    <div class="w-form-fail">
+      <div>Oops! Something went wrong while submitting the form.</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+      <div class="copyright-text">© 2018 QuikNode<a href="http://twitter.com/quiknode" target="_blank">‍</a></div>
+      <div class="div-block-4"><a href="http://facebook.com/quiknode" target="_blank" class="social w-inline-block"><img src="images/facebook.png" class="social-link"></a><a href="http://twitter.com/quiknode" target="_blank" class="social w-inline-block"><img src="images/twitter.png" class="social-link"></a><a href="http://quiknode.io/slack" target="_blank" class="social w-inline-block"><img src="images/slack.png" class="social-link"></a><a href="http://medium.com/@quiknode" class="social last w-inline-block"><img src="images/medium-logo-93CDCF6451-seeklogo.com.png" class="social-link"></a></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/quiknodepro.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+      $(function() {
+        $('.info-row').hover(function() {
+          $(this).find('.hover-menu').fadeIn('fast');
+        }, function() {
+          $(this).find('.hover-menu').fadeOut('fast');
+        });
+        //mode switch (light/dark)
+        $('.mode-switch').click(function() {
+          $('body, .info-row, input, .input-field, .modal-overlay, .modal-content, .text-field, textarea, select, option, .navbar, .nav-link').toggleClass('dark');
+        });
+        //highcharts
+        $.getJSON(
+          'https://cdn.rawgit.com/highcharts/highcharts/v6.0.5/samples/data/usdeur.json',
+          function(data) {
+            Highcharts.chart('chart', {
+              chart: {
+                zoomType: 'x',
+                height: 400
+              },
+              title: {
+                text: 'WebSockets inboud data'
+              },
+              subtitle: {
+                text: document.ontouchstart === undefined ?
+                  'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+              },
+              xAxis: {
+                type: 'datetime'
+              },
+              yAxis: {
+                title: {
+                  text: 'Kb'
+                }
+              },
+              legend: {
+                enabled: false
+              },
+              plotOptions: {
+                area: {
+                  fillColor: {
+                    linearGradient: {
+                      x1: 0,
+                      y1: 0,
+                      x2: 0,
+                      y2: 1
+                    },
+                    stops: [
+                      [0, '#1eb7e3'],
+                      [1, Highcharts.Color('#1eb7e3').setOpacity(0).get('rgba')]
+                    ]
+                  },
+                  marker: {
+                    radius: 2
+                  },
+                  lineWidth: 0,
+                  states: {
+                    hover: {
+                      lineWidth: 1
+                    }
+                  },
+                  threshold: null
+                }
+              },
+              series: [{
+                type: 'area',
+                name: 'WebSockets IN',
+                data: data
+              }]
+            });
+          }
+        );
+        //particles background
+        particlesJS("particles-back", {
+          "particles": {
+            "number": {
+              "value": 199,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "shape": {
+              "type": "polygon",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 2,
+                "size_min": 0.1,
+                "sync": true
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 1,
+              "direction": "none",
+              "random": true,
+              "straight": false,
+              "out_mode": "bounce",
+              "bounce": false,
+              "attract": {
+                "enable": true,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": false,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        });
+        //draggable
+        $(".sortable").sortable({
+          revert: true
+        });
+        /*$( "#draggable" ).draggable({
+        	connectToSortable: "#sortable",
+        	helper: "clone",
+        	revert: "invalid"
+        });*/
+        //Modals handling
+        $('.button').click(function() {
+          var target = "#" + $(this).data('target');
+          $('.modal-overlay').fadeIn('fast', function() {
+            var modal = $(this).find(target);
+            modal.fadeIn('fast');
+          });
+        });
+        $('.close-btn').click(function() {
+          $(this).parent().fadeOut(function() {
+            $(this).parent().hide();
+          });
+        });
+      });
+    </script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
