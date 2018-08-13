@@ -1681,6 +1681,7 @@ a {
     display: none;
   }
   .modal-content {
+    display: block;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -1718,6 +1719,9 @@ a {
     margin-right: 10px;
     background-color: #1eb7e3;
     color: #fff;
+  }
+  .div-block-3 {
+    display: block;
   }
   .search-nav-btn {
     position: fixed;
@@ -1869,6 +1873,9 @@ a {
     min-width: 100px;
     font-size: 0.5rem;
   }
+  .button.icon-btn.save-btn.float-right {
+    display: inline-block;
+  }
   .button.float-right.login-btn {
     font-size: 1rem;
   }
@@ -1906,8 +1913,8 @@ a {
     font-size: 0.55rem;
   }
   .modal-content {
-    padding-right: 0px;
-    padding-left: 0px;
+    display: block;
+    padding-left: 10px;
   }
   .modal-header {
     margin-bottom: 5px;
@@ -1950,6 +1957,9 @@ a {
   }
   .med-img.centered {
     max-width: 60px;
+  }
+  .message-modal {
+    display: none;
   }
   .icon-btn-label {
     font-size: 0.5rem;
@@ -1994,6 +2004,10 @@ a {
   .tab-text {
     font-size: 0.7rem;
     line-height: 0.8rem;
+  }
+  .div-block-3 {
+    display: none;
+    overflow: auto;
   }
   .nav-help {
     left: 0px;
